@@ -1,6 +1,6 @@
 ---
 
-# Shipment Trust & Risk Intelligence System
+# 🚢  Shipment Trust & Risk Intelligence System
 **Supplier Trust Scoring & Shipment Risk Prediction for Import-Export Businesses**
 
 Built for businesses that need to know — which supplier to trust and which shipment will go wrong before it does.
