@@ -1,0 +1,11 @@
+Supplier_Name,avg_delay,avg_damage,avg_return,total_shipments,high_risk_count,on_time_count,on_time_rate,high_risk_rate,Trust_Score,Recommendation
+Aurangabad Traders,2.090909090909091,5.510227272727273,4.028636363636363,44,0,15,0.3409090909090909,0.0,77.2,⚠️ Monitor Closely — request SLA guarantees
+Chennai Logistics,1.2291666666666667,2.9952083333333337,2.483125,48,0,28,0.5833333333333334,0.0,86.5,✅ Preferred Supplier — continue orders
+Delhi Import Hub,2.849056603773585,5.506037735849056,4.8788679245283015,53,2,10,0.18867924528301888,0.03773584905660377,72.8,⚠️ Monitor Closely — request SLA guarantees
+Guangzhou Exports,8.14,14.9318,10.099,50,32,0,0.0,0.64,40.3,"🔴 High Risk — reduce order volume, find alternatives"
+Kolkata Goods Ltd,5.351851851851852,9.65925925925926,6.683518518518518,54,7,2,0.037037037037037035,0.12962962962962962,57.8,"🔴 High Risk — reduce order volume, find alternatives"
+Mumbai Port Co,2.0416666666666665,4.856041666666667,3.3008333333333333,48,0,18,0.375,0.0,79.2,⚠️ Monitor Closely — request SLA guarantees
+Nagpur Freight,3.8076923076923075,7.550192307692308,4.913653846153846,52,1,6,0.11538461538461539,0.019230769230769232,67.0,⚠️ Monitor Closely — request SLA guarantees
+Nashik Distributors,1.1833333333333333,2.7661666666666664,2.5454999999999997,60,0,30,0.5,0.0,86.0,✅ Preferred Supplier — continue orders
+Pune Supply Chain,2.6779661016949152,5.317627118644068,4.241694915254237,59,0,13,0.22033898305084745,0.0,74.4,⚠️ Monitor Closely — request SLA guarantees
+Shenzhen Traders,4.6875,11.305,7.785625,32,7,2,0.0625,0.21875,56.8,"🔴 High Risk — reduce order volume, find alternatives"

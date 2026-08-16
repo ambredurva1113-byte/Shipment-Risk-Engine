@@ -1,0 +1,501 @@
+Shipment_ID,Supplier_Name,Product_Category,Import_Cost,Quantity,Shipping_Days,Expected_Days,Delay_Days,Damage_Rate,Return_Rate,Region,Month,Weather_Risk,Port_Congestion_Score,Payment_Delay,Risk_Label,Delay_Ratio,Loss_Score,Risk_Label_Final
+SHP0001,Mumbai Port Co,Electronics,149602.35,2056,10,7,3,3.59,4.3,Amravati,2,Low,2.3,11,Low,0.429,7.89,Low
+SHP0002,Nashik Distributors,Pharmaceuticals,11197.62,817,20,20,0,1.3,5.16,Mumbai,10,Low,3.1,8,Low,0.0,6.46,Low
+SHP0003,Guangzhou Exports,Electronics,131727.47,4514,35,29,6,16.63,9.07,Aurangabad,10,Medium,3.0,3,Medium,0.207,25.7,Medium
+SHP0004,Delhi Import Hub,Electronics,87409.81,2326,32,29,3,0.26,1.55,Pune,6,Low,2.9,2,Low,0.103,1.81,Low
+SHP0005,Kolkata Goods Ltd,Pharmaceuticals,75000.98,2867,12,10,2,9.94,5.18,Thane,1,High,3.4,0,Medium,0.2,15.12,Medium
+SHP0006,Mumbai Port Co,Textiles,20366.04,2451,25,19,6,3.32,3.14,Nanded,6,High,6.6,0,Medium,0.316,6.46,Medium
+SHP0007,Mumbai Port Co,Machinery,133946.35,2420,8,8,0,4.33,0.7,Kolhapur,2,Low,8.7,6,Low,0.0,5.03,Low
+SHP0008,Nagpur Freight,Food & Agri,167651.53,1382,29,27,2,6.12,3.8,Aurangabad,11,Medium,4.2,12,Low,0.074,9.92,Low
+SHP0009,Mumbai Port Co,Machinery,128820.77,4425,27,26,1,0.83,4.65,Kolhapur,8,High,3.2,0,Low,0.038,5.48,Low
+SHP0010,Aurangabad Traders,Machinery,138499.78,508,17,14,3,0.0,1.34,Kolhapur,6,Low,8.4,5,Low,0.214,1.34,Low
+SHP0011,Mumbai Port Co,Chemicals,183061.54,4696,17,13,4,4.51,2.77,Thane,11,High,3.8,3,Medium,0.308,7.28,Medium
+SHP0012,Nagpur Freight,Chemicals,56651.63,2070,11,11,0,4.84,4.08,Nanded,5,High,6.1,9,Low,0.0,8.92,Low
+SHP0013,Nashik Distributors,Textiles,75589.31,1183,21,19,2,0.0,2.65,Pune,1,High,5.4,3,Low,0.105,2.65,Low
+SHP0014,Delhi Import Hub,Machinery,87321.19,570,28,28,0,7.84,7.06,Amravati,8,Medium,4.4,8,Low,0.0,14.9,Low
+SHP0015,Aurangabad Traders,Electronics,137655.27,988,7,7,0,4.07,4.66,Solapur,5,High,9.0,8,Medium,0.0,8.73,Medium
+SHP0016,Chennai Logistics,Textiles,35840.76,76,20,20,0,2.44,0.0,Amravati,5,High,8.9,0,Medium,0.0,2.44,Low
+SHP0017,Aurangabad Traders,Machinery,174751.12,2494,15,10,5,9.07,3.86,Nagpur,4,High,5.6,9,Medium,0.5,12.93,Medium
+SHP0018,Delhi Import Hub,Electronics,190932.45,4394,28,24,4,4.06,5.72,Mumbai,8,Low,6.4,11,Medium,0.167,9.78,Medium
+SHP0019,Pune Supply Chain,Electronics,51693.2,2023,17,16,1,9.69,0.0,Thane,2,High,9.5,8,Medium,0.062,9.69,Medium
+SHP0020,Aurangabad Traders,Chemicals,30036.34,3943,14,11,3,4.1,4.18,Nanded,9,High,2.5,0,Low,0.273,8.28,Low
+SHP0021,Guangzhou Exports,Chemicals,152276.71,1697,31,24,7,16.07,12.96,Solapur,11,High,3.8,2,High,0.292,29.03,High
+SHP0022,Aurangabad Traders,Textiles,28595.82,1890,21,21,0,3.49,5.83,Amravati,10,Low,4.0,6,Low,0.0,9.32,Low
+SHP0023,Nashik Distributors,Electronics,6402.21,532,14,14,0,3.54,2.19,Solapur,1,Low,1.6,8,Low,0.0,5.73,Low
+SHP0024,Aurangabad Traders,Pharmaceuticals,59303.07,4026,14,14,0,4.02,3.22,Nanded,12,Low,5.9,0,Low,0.0,7.24,Low
+SHP0025,Nagpur Freight,Machinery,158000.79,3384,18,14,4,7.78,5.01,Kolhapur,11,Low,1.8,4,Medium,0.286,12.79,Medium
+SHP0026,Kolkata Goods Ltd,Electronics,96069.81,493,21,20,1,7.74,6.31,Pune,11,High,6.9,1,Medium,0.05,14.05,Medium
+SHP0027,Kolkata Goods Ltd,Textiles,71164.01,945,35,30,5,10.21,10.77,Thane,9,Low,2.7,5,Medium,0.167,20.98,Medium
+SHP0028,Kolkata Goods Ltd,Electronics,59316.3,2096,18,12,6,8.78,3.16,Pune,9,Low,5.0,4,Medium,0.5,11.94,Medium
+SHP0029,Aurangabad Traders,Chemicals,193954.27,1986,10,7,3,12.39,3.62,Nashik,8,Low,4.7,6,Low,0.429,16.01,Low
+SHP0030,Shenzhen Traders,Chemicals,78899.76,3248,16,12,4,8.49,10.29,Aurangabad,8,Medium,9.3,8,High,0.333,18.78,High
+SHP0031,Aurangabad Traders,Food & Agri,145089.61,1318,33,28,5,2.27,6.81,Nanded,1,Low,3.7,0,Medium,0.179,9.08,Medium
+SHP0032,Aurangabad Traders,Textiles,150855.23,518,12,8,4,11.57,2.02,Amravati,9,Low,6.3,2,Medium,0.5,13.59,Medium
+SHP0033,Shenzhen Traders,Chemicals,20621.74,1572,28,23,5,10.49,4.9,Nashik,11,Low,6.4,5,Medium,0.217,15.39,Medium
+SHP0034,Mumbai Port Co,Pharmaceuticals,53011.99,4920,25,25,0,5.42,1.16,Nanded,7,Low,6.6,11,Low,0.0,6.58,Low
+SHP0035,Aurangabad Traders,Chemicals,187267.72,1723,17,17,0,4.03,5.63,Aurangabad,4,High,7.4,0,Medium,0.0,9.66,Medium
+SHP0036,Delhi Import Hub,Chemicals,130872.65,3795,31,28,3,9.92,1.79,Mumbai,2,Medium,9.4,5,Medium,0.107,11.71,Medium
+SHP0037,Nashik Distributors,Machinery,199238.81,650,26,25,1,4.35,0.0,Nagpur,5,High,2.9,0,Low,0.04,4.35,Low
+SHP0038,Mumbai Port Co,Pharmaceuticals,77057.78,1342,17,14,3,4.89,3.5,Aurangabad,12,Medium,8.5,6,Low,0.214,8.39,Low
+SHP0039,Aurangabad Traders,Machinery,135233.32,4593,7,7,0,5.7,4.59,Nagpur,2,Medium,9.4,2,Low,0.0,10.29,Low
+SHP0040,Mumbai Port Co,Textiles,149771.25,1323,17,10,7,5.42,0.62,Solapur,4,Medium,3.5,7,Low,0.7,6.04,Low
+SHP0041,Chennai Logistics,Electronics,100263.71,466,23,23,0,5.36,4.32,Mumbai,5,Low,6.7,1,Low,0.0,9.68,Low
+SHP0042,Pune Supply Chain,Pharmaceuticals,129237.11,2195,15,11,4,6.24,5.64,Kolhapur,9,Low,7.7,12,Medium,0.364,11.88,Medium
+SHP0043,Shenzhen Traders,Pharmaceuticals,19672.55,1271,14,10,4,9.74,6.22,Nanded,6,High,1.3,1,Medium,0.4,15.96,Medium
+SHP0044,Delhi Import Hub,Textiles,29851.88,2575,22,20,2,7.02,5.55,Solapur,1,Medium,9.1,8,Medium,0.1,12.57,Medium
+SHP0045,Guangzhou Exports,Textiles,25044.76,4636,36,28,8,19.36,9.47,Nagpur,12,Medium,9.8,15,High,0.286,28.83,High
+SHP0046,Delhi Import Hub,Food & Agri,176876.16,253,16,12,4,3.43,2.86,Kolhapur,6,Low,7.6,6,Medium,0.333,6.29,Medium
+SHP0047,Guangzhou Exports,Textiles,36043.58,935,22,15,7,17.14,10.95,Nashik,8,Medium,8.8,4,High,0.467,28.09,High
+SHP0048,Nagpur Freight,Machinery,64512.22,1914,19,18,1,2.46,4.11,Kolhapur,4,Low,1.2,8,Low,0.056,6.57,Low
+SHP0049,Chennai Logistics,Machinery,193543.38,2336,10,9,1,0.0,2.35,Amravati,7,Medium,6.8,6,Low,0.111,2.35,Low
+SHP0050,Shenzhen Traders,Electronics,176022.49,2189,12,10,2,12.46,8.12,Mumbai,5,Low,6.2,0,Medium,0.2,20.58,Medium
+SHP0051,Nashik Distributors,Chemicals,72408.99,2619,22,20,2,3.68,4.17,Pune,9,Medium,6.5,9,Low,0.1,7.85,Low
+SHP0052,Nashik Distributors,Machinery,54670.89,3622,13,13,0,0.0,3.03,Nashik,9,Low,5.7,7,Low,0.0,3.03,Low
+SHP0053,Kolkata Goods Ltd,Pharmaceuticals,190030.52,2754,16,9,7,20.56,8.14,Aurangabad,2,High,3.8,9,High,0.778,28.7,High
+SHP0054,Chennai Logistics,Chemicals,84636.62,3346,31,28,3,4.95,1.37,Nashik,3,High,3.7,8,Low,0.107,6.32,Low
+SHP0055,Kolkata Goods Ltd,Electronics,150886.24,1475,31,28,3,8.29,6.03,Amravati,7,High,6.1,5,Medium,0.107,14.32,Medium
+SHP0056,Chennai Logistics,Chemicals,45985.62,4801,23,16,7,0.0,3.37,Thane,8,High,6.9,0,Medium,0.438,3.37,Medium
+SHP0057,Guangzhou Exports,Machinery,97271.31,1440,29,23,6,18.27,10.13,Nanded,9,High,1.8,0,High,0.261,28.4,High
+SHP0058,Mumbai Port Co,Chemicals,136195.16,1890,14,14,0,6.04,1.54,Nashik,1,Low,2.3,5,Low,0.0,7.58,Low
+SHP0059,Nashik Distributors,Chemicals,93806.15,4765,10,9,1,0.05,6.29,Thane,7,Low,7.5,7,Medium,0.111,6.34,Medium
+SHP0060,Guangzhou Exports,Food & Agri,132931.31,95,12,11,1,15.56,8.68,Nagpur,4,Low,8.0,8,Medium,0.091,24.24,Medium
+SHP0061,Aurangabad Traders,Pharmaceuticals,14792.59,2091,21,21,0,4.66,5.01,Amravati,8,Low,5.1,8,Low,0.0,9.67,Low
+SHP0062,Nashik Distributors,Pharmaceuticals,190257.72,3675,17,17,0,1.0,1.05,Kolhapur,9,High,8.3,2,Medium,0.0,2.05,Low
+SHP0063,Nagpur Freight,Pharmaceuticals,150012.81,3938,21,12,9,8.21,2.48,Aurangabad,4,Medium,3.3,8,Medium,0.75,10.69,Medium
+SHP0064,Nagpur Freight,Machinery,51652.94,3653,37,27,10,10.1,1.96,Aurangabad,4,Low,7.4,3,Medium,0.37,12.06,Medium
+SHP0065,Pune Supply Chain,Electronics,20712.64,1285,29,24,5,2.88,4.89,Nashik,3,Low,4.4,8,Low,0.208,7.77,Low
+SHP0066,Kolkata Goods Ltd,Pharmaceuticals,69521.87,3866,23,20,3,8.82,0.52,Kolhapur,7,Medium,1.6,0,Low,0.15,9.34,Low
+SHP0067,Shenzhen Traders,Pharmaceuticals,79174.3,98,29,25,4,8.26,11.26,Kolhapur,7,Medium,3.7,0,Medium,0.16,19.52,Medium
+SHP0068,Aurangabad Traders,Chemicals,180073.21,4049,27,26,1,5.39,6.88,Mumbai,8,Low,3.5,0,Low,0.038,12.27,Low
+SHP0069,Pune Supply Chain,Pharmaceuticals,137432.67,3362,33,28,5,5.03,2.04,Nagpur,8,High,2.5,6,Medium,0.179,7.07,Medium
+SHP0070,Aurangabad Traders,Textiles,181851.13,4898,10,7,3,3.2,4.14,Kolhapur,2,High,7.0,3,Low,0.429,7.34,Low
+SHP0071,Nagpur Freight,Chemicals,14805.5,3155,16,12,4,8.99,8.17,Solapur,6,Medium,2.9,0,Medium,0.333,17.16,Medium
+SHP0072,Chennai Logistics,Machinery,54192.95,720,27,20,7,0.0,1.7,Mumbai,9,Medium,1.2,7,Low,0.35,1.7,Low
+SHP0073,Guangzhou Exports,Pharmaceuticals,18380.58,379,35,27,8,13.13,9.58,Mumbai,4,Low,9.5,3,High,0.296,22.71,High
+SHP0074,Delhi Import Hub,Machinery,29613.09,987,15,14,1,8.55,5.71,Aurangabad,8,High,9.5,2,Medium,0.071,14.26,Medium
+SHP0075,Delhi Import Hub,Electronics,123413.26,988,31,26,5,6.92,6.63,Nanded,2,Low,9.7,7,Medium,0.192,13.55,Medium
+SHP0076,Chennai Logistics,Pharmaceuticals,137082.72,3124,25,25,0,1.32,3.49,Pune,4,Medium,9.5,7,Low,0.0,4.81,Low
+SHP0077,Guangzhou Exports,Electronics,140952.64,2520,17,10,7,15.35,12.56,Nanded,2,High,6.4,2,High,0.7,27.91,High
+SHP0078,Pune Supply Chain,Chemicals,88533.71,3085,27,24,3,4.39,3.56,Mumbai,6,Low,5.6,9,Low,0.125,7.95,Low
+SHP0079,Nagpur Freight,Chemicals,89537.06,3017,16,10,6,9.44,7.61,Nagpur,8,High,9.0,5,High,0.6,17.05,High
+SHP0080,Delhi Import Hub,Chemicals,106740.62,2262,35,30,5,5.07,5.65,Thane,9,High,8.3,4,Medium,0.167,10.72,Medium
+SHP0081,Kolkata Goods Ltd,Chemicals,120532.55,2690,36,30,6,10.79,5.36,Aurangabad,2,Low,8.5,13,Medium,0.2,16.15,Medium
+SHP0082,Guangzhou Exports,Chemicals,116120.68,3154,25,21,4,11.36,12.32,Nagpur,6,Medium,1.3,8,Medium,0.19,23.68,Medium
+SHP0083,Guangzhou Exports,Pharmaceuticals,160577.31,2838,27,18,9,16.89,9.98,Aurangabad,12,Medium,8.9,1,High,0.5,26.87,High
+SHP0084,Shenzhen Traders,Textiles,189872.2,751,28,23,5,9.97,9.95,Amravati,8,Low,7.5,4,Medium,0.217,19.92,Medium
+SHP0085,Nagpur Freight,Food & Agri,143809.27,3721,28,27,1,6.04,5.83,Kolhapur,4,Low,1.8,2,Low,0.037,11.87,Low
+SHP0086,Guangzhou Exports,Food & Agri,134472.2,3073,21,16,5,15.73,10.49,Kolhapur,6,Medium,6.0,2,High,0.312,26.22,High
+SHP0087,Aurangabad Traders,Food & Agri,73603.05,3767,18,17,1,5.7,1.1,Pune,4,Medium,3.8,0,Low,0.059,6.8,Low
+SHP0088,Guangzhou Exports,Machinery,28313.17,4439,22,17,5,14.36,10.62,Thane,4,High,2.7,10,High,0.294,24.98,High
+SHP0089,Nashik Distributors,Machinery,121374.19,873,26,23,3,1.52,1.96,Nagpur,6,Low,3.7,0,Low,0.13,3.48,Low
+SHP0090,Shenzhen Traders,Food & Agri,109156.34,2297,33,29,4,11.13,8.65,Aurangabad,9,Low,9.8,1,Medium,0.138,19.78,Medium
+SHP0091,Delhi Import Hub,Chemicals,174349.93,4071,31,27,4,10.6,4.78,Aurangabad,10,Low,8.9,6,Medium,0.148,15.38,Medium
+SHP0092,Nagpur Freight,Electronics,71437.66,470,27,21,6,5.8,5.45,Pune,8,Medium,9.5,5,Medium,0.286,11.25,Medium
+SHP0093,Kolkata Goods Ltd,Electronics,19446.02,489,28,22,6,6.68,7.05,Aurangabad,10,Low,2.3,6,Medium,0.273,13.73,Medium
+SHP0094,Guangzhou Exports,Pharmaceuticals,113824.24,3459,22,10,12,17.88,14.31,Nashik,10,High,6.4,1,High,1.2,32.19,High
+SHP0095,Kolkata Goods Ltd,Pharmaceuticals,182158.35,2485,29,21,8,9.55,11.38,Nanded,5,High,9.9,1,High,0.381,20.93,High
+SHP0096,Shenzhen Traders,Textiles,192221.21,862,28,26,2,10.2,3.75,Pune,5,Low,6.6,2,Low,0.077,13.95,Low
+SHP0097,Guangzhou Exports,Chemicals,112638.49,1332,17,12,5,15.45,10.68,Nanded,12,Low,4.7,12,High,0.417,26.13,High
+SHP0098,Chennai Logistics,Machinery,50137.87,2366,11,8,3,1.27,0.2,Nashik,2,High,8.7,6,Medium,0.375,1.47,Medium
+SHP0099,Nashik Distributors,Machinery,161761.61,1670,28,28,0,7.49,4.36,Nagpur,4,Medium,2.0,3,Low,0.0,11.85,Low
+SHP0100,Delhi Import Hub,Chemicals,16629.42,2569,9,9,0,10.06,4.77,Aurangabad,10,High,7.7,9,Medium,0.0,14.83,Medium
+SHP0101,Mumbai Port Co,Electronics,139292.21,3347,21,21,0,2.2,3.01,Thane,8,Medium,5.5,5,Low,0.0,5.21,Low
+SHP0102,Nashik Distributors,Food & Agri,178437.46,2690,8,8,0,3.87,0.0,Nashik,2,High,3.3,4,Low,0.0,3.87,Low
+SHP0103,Nashik Distributors,Pharmaceuticals,190403.32,2257,26,25,1,3.54,3.42,Thane,3,High,1.4,0,Low,0.04,6.96,Low
+SHP0104,Nagpur Freight,Chemicals,40390.38,4845,15,15,0,10.83,5.66,Pune,8,Medium,6.7,2,Medium,0.0,16.49,Medium
+SHP0105,Pune Supply Chain,Machinery,69995.14,906,26,20,6,5.35,6.36,Thane,12,Low,4.0,5,Medium,0.3,11.71,Medium
+SHP0106,Kolkata Goods Ltd,Pharmaceuticals,12155.94,771,36,24,12,14.27,6.5,Kolhapur,2,Medium,3.3,8,Medium,0.5,20.77,High
+SHP0107,Shenzhen Traders,Pharmaceuticals,174526.66,3834,34,28,6,16.11,6.07,Solapur,9,Medium,1.5,7,Medium,0.214,22.18,Medium
+SHP0108,Nagpur Freight,Chemicals,91197.99,472,34,27,7,1.72,2.63,Aurangabad,3,Low,3.4,0,Low,0.259,4.35,Low
+SHP0109,Nagpur Freight,Pharmaceuticals,10629.54,2010,13,10,3,9.15,8.0,Mumbai,9,High,2.4,5,Medium,0.3,17.15,Medium
+SHP0110,Kolkata Goods Ltd,Chemicals,48816.63,979,19,9,10,4.86,3.59,Nagpur,11,Medium,9.5,4,Medium,1.111,8.45,Medium
+SHP0111,Chennai Logistics,Pharmaceuticals,142555.27,3453,25,23,2,2.9,0.0,Thane,4,Medium,9.8,4,Low,0.087,2.9,Low
+SHP0112,Delhi Import Hub,Machinery,42169.02,4960,19,19,0,8.01,5.73,Pune,3,High,7.7,1,Medium,0.0,13.74,Medium
+SHP0113,Kolkata Goods Ltd,Pharmaceuticals,187178.44,4209,21,17,4,5.82,6.87,Aurangabad,5,Medium,8.4,8,Medium,0.235,12.69,Medium
+SHP0114,Nashik Distributors,Pharmaceuticals,100479.87,1267,28,28,0,3.51,0.94,Solapur,6,Medium,5.8,1,Low,0.0,4.45,Low
+SHP0115,Aurangabad Traders,Chemicals,93792.2,2686,21,19,2,1.89,2.89,Nanded,4,Low,9.8,0,Low,0.105,4.78,Low
+SHP0116,Guangzhou Exports,Food & Agri,13511.22,3924,33,20,13,15.11,8.6,Kolhapur,7,High,9.2,5,High,0.65,23.71,High
+SHP0117,Delhi Import Hub,Chemicals,193140.77,1084,24,22,2,5.34,6.23,Pune,6,High,9.7,8,Medium,0.091,11.57,Medium
+SHP0118,Mumbai Port Co,Electronics,182536.13,175,23,23,0,2.27,2.45,Nagpur,11,High,2.3,0,Low,0.0,4.72,Low
+SHP0119,Nagpur Freight,Chemicals,71019.44,3306,15,15,0,11.1,8.29,Amravati,6,High,1.7,4,Medium,0.0,19.39,Medium
+SHP0120,Pune Supply Chain,Food & Agri,145149.9,4047,30,27,3,5.93,10.16,Nashik,2,High,1.3,9,Medium,0.111,16.09,Medium
+SHP0121,Chennai Logistics,Chemicals,150619.44,3605,14,14,0,0.13,0.0,Pune,12,Low,7.8,5,Low,0.0,0.13,Low
+SHP0122,Delhi Import Hub,Machinery,63395.89,287,29,29,0,1.73,3.71,Aurangabad,1,Low,3.9,0,Low,0.0,5.44,Low
+SHP0123,Pune Supply Chain,Textiles,33386.11,4401,27,20,7,7.64,3.98,Nagpur,3,Medium,6.1,10,Low,0.35,11.62,Low
+SHP0124,Mumbai Port Co,Chemicals,174813.72,2022,28,26,2,1.42,6.05,Nashik,3,Medium,9.2,7,Medium,0.077,7.47,Medium
+SHP0125,Chennai Logistics,Textiles,54788.71,126,21,21,0,2.43,0.25,Amravati,11,Medium,9.1,0,Low,0.0,2.68,Low
+SHP0126,Mumbai Port Co,Chemicals,189320.95,4863,25,21,4,9.73,0.2,Aurangabad,7,Medium,6.8,7,Medium,0.19,9.93,Medium
+SHP0127,Chennai Logistics,Pharmaceuticals,199877.85,4008,13,13,0,1.54,0.82,Solapur,10,Low,3.1,1,Low,0.0,2.36,Low
+SHP0128,Chennai Logistics,Pharmaceuticals,62570.0,3292,30,29,1,0.51,2.54,Mumbai,11,Medium,1.1,4,Low,0.034,3.05,Low
+SHP0129,Nagpur Freight,Pharmaceuticals,156269.49,1935,19,16,3,4.28,3.85,Nashik,4,High,8.2,8,Medium,0.188,8.13,Medium
+SHP0130,Chennai Logistics,Machinery,152337.58,1170,30,28,2,0.07,2.2,Mumbai,11,High,1.9,8,Low,0.071,2.27,Low
+SHP0131,Nagpur Freight,Textiles,118016.89,1126,8,8,0,8.63,3.67,Kolhapur,6,Low,9.2,7,Medium,0.0,12.3,Medium
+SHP0132,Guangzhou Exports,Machinery,158370.0,3047,16,11,5,9.59,6.74,Nagpur,5,High,5.5,5,Medium,0.455,16.33,Medium
+SHP0133,Nagpur Freight,Textiles,150579.07,2824,20,16,4,4.29,6.28,Nagpur,2,Low,5.2,0,Medium,0.25,10.57,Medium
+SHP0134,Kolkata Goods Ltd,Machinery,76326.13,3282,29,24,5,5.37,5.7,Thane,2,Low,3.4,5,Medium,0.208,11.07,Medium
+SHP0135,Chennai Logistics,Pharmaceuticals,79299.97,3093,25,25,0,1.85,4.01,Mumbai,8,Low,7.1,2,Low,0.0,5.86,Low
+SHP0136,Aurangabad Traders,Food & Agri,183474.9,1863,22,17,5,1.61,5.06,Aurangabad,8,High,1.6,10,Medium,0.294,6.67,Medium
+SHP0137,Kolkata Goods Ltd,Textiles,32256.52,354,10,10,0,6.61,8.15,Pune,2,Medium,10.0,4,Medium,0.0,14.76,Medium
+SHP0138,Aurangabad Traders,Chemicals,80785.94,3089,15,11,4,3.19,4.17,Amravati,12,High,9.5,4,Medium,0.364,7.36,Medium
+SHP0139,Nashik Distributors,Chemicals,146686.83,3448,34,30,4,2.76,2.68,Nanded,8,High,1.9,3,Medium,0.133,5.44,Medium
+SHP0140,Chennai Logistics,Electronics,139604.73,1829,8,8,0,1.7,2.79,Solapur,4,Medium,5.0,3,Low,0.0,4.49,Low
+SHP0141,Pune Supply Chain,Chemicals,180830.76,2988,26,24,2,11.23,5.74,Pune,4,Low,4.6,3,Medium,0.083,16.97,Medium
+SHP0142,Mumbai Port Co,Textiles,46360.63,4941,33,28,5,2.78,0.0,Nashik,6,Low,1.5,0,Low,0.179,2.78,Low
+SHP0143,Nashik Distributors,Textiles,18378.98,4590,13,13,0,0.95,2.04,Solapur,4,Low,6.3,11,Low,0.0,2.99,Low
+SHP0144,Nashik Distributors,Food & Agri,59068.59,1235,8,7,1,1.34,3.66,Pune,3,Low,5.9,0,Low,0.143,5.0,Low
+SHP0145,Shenzhen Traders,Electronics,7897.76,1999,16,11,5,14.31,5.04,Aurangabad,3,High,3.9,9,Medium,0.455,19.35,Medium
+SHP0146,Delhi Import Hub,Pharmaceuticals,87087.31,981,34,30,4,4.75,6.27,Solapur,8,High,1.6,14,Medium,0.133,11.02,Medium
+SHP0147,Nashik Distributors,Machinery,93141.06,1864,11,10,1,2.74,1.08,Amravati,11,High,1.4,1,Low,0.1,3.82,Low
+SHP0148,Nagpur Freight,Chemicals,192985.11,548,33,27,6,4.43,5.14,Pune,7,Medium,8.6,3,Medium,0.222,9.57,Medium
+SHP0149,Nagpur Freight,Pharmaceuticals,180357.02,2688,14,9,5,8.0,7.08,Aurangabad,3,High,2.3,2,Medium,0.556,15.08,Medium
+SHP0150,Nashik Distributors,Pharmaceuticals,143869.8,3170,24,24,0,0.0,1.11,Amravati,8,High,5.8,6,Low,0.0,1.11,Low
+SHP0151,Kolkata Goods Ltd,Chemicals,159653.74,987,18,10,8,6.23,8.74,Nashik,9,High,6.9,10,Medium,0.8,14.97,Medium
+SHP0152,Nagpur Freight,Chemicals,85693.65,3765,19,14,5,12.63,3.45,Solapur,2,Medium,4.7,0,Medium,0.357,16.08,Medium
+SHP0153,Pune Supply Chain,Electronics,54703.51,1300,28,28,0,9.49,5.31,Pune,2,High,9.3,4,Medium,0.0,14.8,Medium
+SHP0154,Mumbai Port Co,Pharmaceuticals,23830.06,3102,22,20,2,0.62,7.89,Amravati,10,Low,6.0,5,Low,0.1,8.51,Low
+SHP0155,Pune Supply Chain,Machinery,28835.1,2946,30,28,2,7.18,4.96,Mumbai,7,High,9.5,5,Medium,0.071,12.14,Medium
+SHP0156,Nashik Distributors,Textiles,73571.01,4784,16,16,0,3.41,5.76,Thane,11,High,2.9,10,Medium,0.0,9.17,Medium
+SHP0157,Mumbai Port Co,Chemicals,169847.82,3061,24,18,6,2.47,1.02,Nashik,10,Low,7.9,4,Medium,0.333,3.49,Medium
+SHP0158,Aurangabad Traders,Electronics,124646.79,4610,29,26,3,8.28,0.62,Aurangabad,11,Low,6.5,11,Low,0.115,8.9,Low
+SHP0159,Delhi Import Hub,Pharmaceuticals,142026.26,2581,17,15,2,4.72,2.98,Nagpur,3,Medium,4.2,0,Low,0.133,7.7,Low
+SHP0160,Kolkata Goods Ltd,Chemicals,32665.56,301,17,9,8,9.22,4.42,Kolhapur,4,Low,7.7,0,Medium,0.889,13.64,Medium
+SHP0161,Nagpur Freight,Electronics,35694.81,2602,19,17,2,12.01,4.48,Nanded,10,High,3.9,0,Medium,0.118,16.49,Medium
+SHP0162,Shenzhen Traders,Chemicals,35694.93,457,15,11,4,11.18,2.61,Kolhapur,8,High,1.7,4,Medium,0.364,13.79,Medium
+SHP0163,Nashik Distributors,Machinery,85765.83,1815,21,21,0,4.09,5.7,Pune,7,High,2.0,9,Medium,0.0,9.79,Medium
+SHP0164,Nashik Distributors,Electronics,107752.15,2576,22,22,0,0.0,7.15,Mumbai,10,Low,3.0,5,Low,0.0,7.15,Low
+SHP0165,Guangzhou Exports,Chemicals,189338.2,1174,24,16,8,14.93,10.4,Mumbai,2,Medium,3.6,4,High,0.5,25.33,High
+SHP0166,Kolkata Goods Ltd,Electronics,30191.21,4412,16,12,4,7.36,6.93,Solapur,9,High,3.1,2,Medium,0.333,14.29,Medium
+SHP0167,Kolkata Goods Ltd,Chemicals,13248.94,203,33,30,3,9.32,6.49,Nanded,6,Medium,9.3,11,Medium,0.1,15.81,Medium
+SHP0168,Nashik Distributors,Textiles,143352.3,3471,19,19,0,5.27,4.49,Solapur,1,Medium,2.0,0,Low,0.0,9.76,Low
+SHP0169,Nashik Distributors,Chemicals,167245.05,3014,21,21,0,0.89,0.0,Nashik,2,Low,4.9,1,Low,0.0,0.89,Low
+SHP0170,Nashik Distributors,Textiles,107172.7,3292,19,19,0,7.26,3.87,Solapur,4,Medium,7.7,10,Low,0.0,11.13,Low
+SHP0171,Mumbai Port Co,Food & Agri,128478.81,4396,27,23,4,0.61,1.95,Solapur,6,High,2.7,6,Medium,0.174,2.56,Medium
+SHP0172,Delhi Import Hub,Textiles,25046.88,2146,14,14,0,8.14,4.52,Pune,3,Low,2.6,3,Low,0.0,12.66,Low
+SHP0173,Nagpur Freight,Machinery,152116.94,4797,27,21,6,8.33,4.28,Nanded,10,Medium,7.1,9,Medium,0.286,12.61,Medium
+SHP0174,Pune Supply Chain,Electronics,90753.75,3891,11,11,0,6.85,5.19,Nanded,5,Medium,6.7,3,Low,0.0,12.04,Low
+SHP0175,Pune Supply Chain,Electronics,19467.18,3832,25,23,2,1.25,5.85,Aurangabad,6,Medium,1.3,4,Low,0.087,7.1,Low
+SHP0176,Mumbai Port Co,Chemicals,120845.56,3199,26,26,0,7.15,1.59,Mumbai,12,Medium,6.2,0,Low,0.0,8.74,Low
+SHP0177,Nashik Distributors,Electronics,41706.7,3946,27,27,0,3.82,0.0,Thane,1,High,2.4,12,Low,0.0,3.82,Low
+SHP0178,Pune Supply Chain,Pharmaceuticals,21444.18,1463,29,29,0,10.09,4.42,Thane,8,Low,3.2,4,Low,0.0,14.51,Low
+SHP0179,Aurangabad Traders,Electronics,35955.51,3104,27,26,1,6.2,3.92,Nanded,6,Medium,4.5,9,Low,0.038,10.12,Low
+SHP0180,Pune Supply Chain,Textiles,69289.7,4620,11,9,2,5.45,3.27,Nanded,5,High,4.5,4,Low,0.222,8.72,Low
+SHP0181,Pune Supply Chain,Textiles,118634.21,1208,11,9,2,0.0,1.3,Kolhapur,11,Medium,3.8,7,Low,0.222,1.3,Low
+SHP0182,Nashik Distributors,Food & Agri,187910.43,2586,30,29,1,1.45,2.04,Nagpur,6,High,4.4,6,Low,0.034,3.49,Low
+SHP0183,Aurangabad Traders,Textiles,130974.84,3518,10,9,1,2.67,4.39,Aurangabad,6,High,4.3,1,Low,0.111,7.06,Low
+SHP0184,Guangzhou Exports,Electronics,189795.31,4033,26,17,9,9.89,12.06,Nagpur,3,Low,3.0,6,High,0.529,21.95,High
+SHP0185,Chennai Logistics,Pharmaceuticals,103999.49,4471,11,10,1,5.95,5.33,Solapur,1,High,9.0,9,Medium,0.1,11.28,Medium
+SHP0186,Delhi Import Hub,Food & Agri,78460.37,1379,26,26,0,2.16,3.75,Nagpur,10,Low,8.5,5,Low,0.0,5.91,Low
+SHP0187,Nagpur Freight,Textiles,85117.43,1995,13,8,5,4.82,5.37,Thane,12,Medium,6.5,1,Medium,0.625,10.19,Medium
+SHP0188,Aurangabad Traders,Chemicals,65346.24,3892,15,14,1,0.78,2.15,Thane,10,Low,4.3,0,Low,0.071,2.93,Low
+SHP0189,Chennai Logistics,Machinery,103066.8,3479,19,19,0,6.16,0.1,Nagpur,10,Low,8.4,15,Low,0.0,6.26,Low
+SHP0190,Shenzhen Traders,Electronics,98715.18,3090,33,27,6,12.55,6.28,Amravati,12,High,9.4,7,High,0.222,18.83,High
+SHP0191,Chennai Logistics,Electronics,153807.78,2284,9,9,0,3.37,7.12,Kolhapur,3,Medium,9.1,4,Medium,0.0,10.49,Medium
+SHP0192,Guangzhou Exports,Textiles,177502.81,268,32,21,11,12.89,9.93,Solapur,9,Medium,1.5,12,Medium,0.524,22.82,High
+SHP0193,Kolkata Goods Ltd,Textiles,78107.97,280,13,9,4,14.44,8.42,Solapur,12,Medium,9.4,2,Medium,0.444,22.86,Medium
+SHP0194,Delhi Import Hub,Chemicals,60941.48,3920,12,8,4,8.92,6.24,Thane,12,High,8.5,0,High,0.5,15.16,High
+SHP0195,Nashik Distributors,Food & Agri,181642.21,205,7,7,0,1.26,1.85,Amravati,3,Medium,2.9,7,Low,0.0,3.11,Low
+SHP0196,Nashik Distributors,Chemicals,87534.68,2410,24,23,1,0.0,2.76,Nashik,1,Low,3.7,7,Low,0.043,2.76,Low
+SHP0197,Nashik Distributors,Pharmaceuticals,17247.39,4144,23,21,2,5.24,3.67,Amravati,11,High,5.8,6,Low,0.095,8.91,Low
+SHP0198,Guangzhou Exports,Chemicals,32997.48,3566,36,29,7,10.02,10.86,Nanded,4,Low,6.5,5,Medium,0.241,20.88,Medium
+SHP0199,Delhi Import Hub,Pharmaceuticals,135301.91,4338,31,28,3,2.17,2.84,Amravati,9,Medium,1.6,9,Low,0.107,5.01,Low
+SHP0200,Aurangabad Traders,Food & Agri,8965.19,3901,26,24,2,7.04,4.06,Aurangabad,6,Low,6.7,5,Low,0.083,11.1,Low
+SHP0201,Shenzhen Traders,Pharmaceuticals,158761.4,2874,25,18,7,10.45,8.19,Pune,11,Low,7.6,3,Medium,0.389,18.64,Medium
+SHP0202,Pune Supply Chain,Food & Agri,13645.46,4522,11,11,0,4.07,4.44,Thane,3,Medium,8.3,3,Low,0.0,8.51,Low
+SHP0203,Nagpur Freight,Machinery,40544.21,1154,34,27,7,4.32,4.63,Mumbai,8,Low,7.4,3,Medium,0.259,8.95,Medium
+SHP0204,Guangzhou Exports,Pharmaceuticals,159266.3,393,20,8,12,15.59,12.06,Kolhapur,9,Medium,9.4,0,High,1.5,27.65,High
+SHP0205,Nagpur Freight,Machinery,12141.05,1615,19,15,4,9.67,5.16,Solapur,1,Medium,4.2,9,Medium,0.267,14.83,Medium
+SHP0206,Mumbai Port Co,Textiles,90205.52,3326,18,18,0,8.23,7.6,Solapur,7,High,5.0,3,Medium,0.0,15.83,Medium
+SHP0207,Nagpur Freight,Electronics,102017.06,4303,31,29,2,11.36,8.16,Kolhapur,12,Medium,8.2,2,Medium,0.069,19.52,Medium
+SHP0208,Kolkata Goods Ltd,Machinery,199044.14,1528,30,26,4,8.15,4.31,Pune,2,High,3.6,1,Medium,0.154,12.46,Medium
+SHP0209,Chennai Logistics,Electronics,91953.57,3540,16,16,0,0.7,1.93,Thane,6,Low,7.2,5,Low,0.0,2.63,Low
+SHP0210,Pune Supply Chain,Food & Agri,199639.37,2299,32,26,6,2.0,5.97,Pune,1,High,9.8,4,Medium,0.231,7.97,Medium
+SHP0211,Kolkata Goods Ltd,Electronics,105051.77,1360,23,18,5,11.02,4.75,Thane,10,Low,2.3,6,Medium,0.278,15.77,Medium
+SHP0212,Delhi Import Hub,Pharmaceuticals,51019.1,3050,12,9,3,7.48,5.58,Mumbai,10,Medium,4.4,14,Low,0.333,13.06,Low
+SHP0213,Delhi Import Hub,Textiles,92734.9,3088,29,28,1,4.41,3.75,Nanded,2,Medium,5.0,2,Low,0.036,8.16,Low
+SHP0214,Aurangabad Traders,Chemicals,82616.64,2333,19,18,1,8.57,6.84,Nagpur,1,Low,9.6,2,Medium,0.056,15.41,Medium
+SHP0215,Aurangabad Traders,Textiles,183140.79,1014,19,19,0,6.41,2.9,Thane,12,Medium,8.0,7,Low,0.0,9.31,Low
+SHP0216,Nashik Distributors,Textiles,140326.23,4073,17,16,1,0.0,5.1,Thane,2,Low,2.1,12,Low,0.062,5.1,Low
+SHP0217,Nagpur Freight,Pharmaceuticals,163050.08,2668,11,9,2,5.84,5.57,Amravati,2,High,4.1,6,Medium,0.222,11.41,Medium
+SHP0218,Chennai Logistics,Textiles,171015.6,1476,18,16,2,9.03,1.65,Nashik,2,Medium,5.6,1,Low,0.125,10.68,Low
+SHP0219,Guangzhou Exports,Pharmaceuticals,10125.39,4588,25,22,3,12.81,9.93,Nagpur,9,High,4.3,12,Medium,0.136,22.74,Medium
+SHP0220,Mumbai Port Co,Electronics,65311.69,3971,9,9,0,4.67,2.97,Nanded,7,High,4.7,9,Low,0.0,7.64,Low
+SHP0221,Delhi Import Hub,Pharmaceuticals,130256.02,3736,27,17,10,4.41,4.02,Nagpur,6,Medium,7.1,9,Medium,0.588,8.43,Medium
+SHP0222,Nashik Distributors,Pharmaceuticals,154717.42,1107,15,12,3,7.54,3.17,Pune,1,Medium,5.5,3,Low,0.25,10.71,Low
+SHP0223,Delhi Import Hub,Electronics,37108.13,2693,20,16,4,9.33,6.64,Aurangabad,9,High,3.0,7,Medium,0.25,15.97,Medium
+SHP0224,Chennai Logistics,Pharmaceuticals,128836.13,4562,17,13,4,6.51,4.76,Nanded,5,Medium,2.1,7,Low,0.308,11.27,Low
+SHP0225,Mumbai Port Co,Food & Agri,129992.55,4898,24,23,1,4.44,5.41,Nanded,11,High,2.4,1,Medium,0.043,9.85,Medium
+SHP0226,Nashik Distributors,Electronics,169293.35,4667,19,17,2,0.82,2.06,Pune,1,Low,8.4,10,Low,0.118,2.88,Low
+SHP0227,Nashik Distributors,Food & Agri,131970.35,4736,16,15,1,2.14,0.0,Thane,1,Medium,6.6,7,Low,0.067,2.14,Low
+SHP0228,Aurangabad Traders,Machinery,130171.92,2524,20,16,4,11.49,3.38,Kolhapur,11,Medium,3.2,5,Medium,0.25,14.87,Medium
+SHP0229,Nagpur Freight,Machinery,139279.65,1344,13,9,4,11.73,4.81,Nashik,8,Medium,4.7,6,Medium,0.444,16.54,Medium
+SHP0230,Nashik Distributors,Textiles,65953.59,2665,13,11,2,2.56,1.11,Kolhapur,6,High,9.9,5,Medium,0.182,3.67,Medium
+SHP0231,Pune Supply Chain,Textiles,114521.99,2664,28,23,5,1.92,4.27,Thane,5,Low,5.2,2,Low,0.217,6.19,Low
+SHP0232,Delhi Import Hub,Pharmaceuticals,14868.03,3196,16,10,6,1.43,3.88,Solapur,3,High,4.8,6,Medium,0.6,5.31,Medium
+SHP0233,Pune Supply Chain,Electronics,153808.67,4131,19,13,6,4.8,2.89,Thane,5,High,5.2,12,Medium,0.462,7.69,Medium
+SHP0234,Mumbai Port Co,Machinery,103561.67,2022,19,19,0,0.0,3.88,Mumbai,1,Low,6.3,2,Low,0.0,3.88,Low
+SHP0235,Nagpur Freight,Textiles,177056.2,3905,26,26,0,9.13,5.49,Kolhapur,2,Medium,5.8,2,Medium,0.0,14.62,Medium
+SHP0236,Chennai Logistics,Pharmaceuticals,76326.64,3353,30,30,0,5.62,3.3,Nanded,1,Medium,1.4,4,Low,0.0,8.92,Low
+SHP0237,Guangzhou Exports,Pharmaceuticals,112878.47,652,31,18,13,11.79,6.95,Aurangabad,9,Medium,5.5,2,Medium,0.722,18.74,High
+SHP0238,Nashik Distributors,Machinery,30089.36,842,10,10,0,2.73,1.52,Amravati,6,Medium,4.4,6,Low,0.0,4.25,Low
+SHP0239,Delhi Import Hub,Food & Agri,122480.28,3338,13,13,0,10.33,4.84,Nagpur,1,High,1.4,9,Medium,0.0,15.17,Medium
+SHP0240,Pune Supply Chain,Pharmaceuticals,106269.88,1270,25,22,3,6.37,5.14,Solapur,3,High,9.0,6,Medium,0.136,11.51,Medium
+SHP0241,Pune Supply Chain,Chemicals,81626.14,2501,15,12,3,8.99,4.39,Amravati,9,High,4.0,7,Medium,0.25,13.38,Medium
+SHP0242,Nashik Distributors,Pharmaceuticals,97604.06,186,16,16,0,6.32,0.65,Kolhapur,2,Medium,4.0,12,Low,0.0,6.97,Low
+SHP0243,Chennai Logistics,Pharmaceuticals,175059.33,268,30,30,0,0.0,2.26,Nanded,11,High,5.3,2,Low,0.0,2.26,Low
+SHP0244,Guangzhou Exports,Chemicals,15014.26,3985,40,30,10,13.04,9.11,Nanded,12,Low,5.7,0,Medium,0.333,22.15,Medium
+SHP0245,Delhi Import Hub,Machinery,52228.33,4740,29,28,1,0.0,1.83,Thane,1,High,2.0,8,Low,0.036,1.83,Low
+SHP0246,Kolkata Goods Ltd,Food & Agri,85527.22,1720,19,11,8,10.28,5.07,Thane,10,Medium,5.5,4,Medium,0.727,15.35,Medium
+SHP0247,Shenzhen Traders,Pharmaceuticals,31926.08,1748,33,29,4,8.52,11.01,Thane,11,High,3.9,8,High,0.138,19.53,High
+SHP0248,Kolkata Goods Ltd,Pharmaceuticals,191553.67,3815,22,17,5,9.08,7.42,Aurangabad,6,High,4.1,0,Medium,0.294,16.5,Medium
+SHP0249,Nagpur Freight,Food & Agri,191680.79,2335,16,13,3,4.95,3.0,Aurangabad,5,High,3.7,3,Low,0.231,7.95,Low
+SHP0250,Guangzhou Exports,Machinery,142472.71,2647,42,29,13,16.92,8.86,Aurangabad,12,Medium,4.1,7,High,0.448,25.78,High
+SHP0251,Mumbai Port Co,Electronics,136941.34,3160,31,25,6,6.77,3.12,Aurangabad,3,Medium,8.4,2,Medium,0.24,9.89,Medium
+SHP0252,Chennai Logistics,Textiles,20410.74,3673,32,29,3,4.18,3.79,Nashik,8,High,3.3,7,Low,0.103,7.97,Low
+SHP0253,Aurangabad Traders,Textiles,186939.67,2275,21,15,6,3.39,6.63,Nanded,12,Low,2.0,5,Medium,0.4,10.02,Medium
+SHP0254,Guangzhou Exports,Chemicals,135617.62,4400,22,8,14,12.93,13.47,Pune,1,Low,6.7,5,High,1.75,26.4,High
+SHP0255,Pune Supply Chain,Food & Agri,97118.76,1176,29,29,0,3.55,3.36,Kolhapur,3,Low,9.7,6,Low,0.0,6.91,Low
+SHP0256,Nagpur Freight,Food & Agri,131855.04,2403,27,22,5,5.28,4.95,Pune,1,Medium,3.6,13,Low,0.227,10.23,Low
+SHP0257,Nashik Distributors,Chemicals,109354.69,355,20,14,6,3.31,2.08,Mumbai,3,Low,4.8,5,Low,0.429,5.39,Low
+SHP0258,Nagpur Freight,Electronics,187638.71,2421,17,12,5,3.93,4.49,Nanded,10,Low,1.1,0,Low,0.417,8.42,Low
+SHP0259,Pune Supply Chain,Chemicals,93598.07,4500,19,16,3,6.94,3.03,Amravati,3,High,5.4,11,Low,0.188,9.97,Low
+SHP0260,Chennai Logistics,Food & Agri,162718.71,2758,13,13,0,0.0,2.45,Aurangabad,11,Low,7.6,9,Low,0.0,2.45,Low
+SHP0261,Delhi Import Hub,Pharmaceuticals,148640.49,2466,15,7,8,4.62,7.16,Nagpur,4,High,7.1,4,High,1.143,11.78,High
+SHP0262,Kolkata Goods Ltd,Chemicals,105479.73,760,25,20,5,11.65,8.3,Nagpur,3,Medium,7.0,0,Medium,0.25,19.95,Medium
+SHP0263,Pune Supply Chain,Machinery,6331.87,3192,20,14,6,9.14,2.75,Solapur,5,Low,5.0,6,Medium,0.429,11.89,Medium
+SHP0264,Nashik Distributors,Food & Agri,116711.08,2192,32,30,2,2.78,0.9,Mumbai,4,High,4.2,2,Low,0.067,3.68,Low
+SHP0265,Mumbai Port Co,Food & Agri,64827.24,3371,22,21,1,7.52,4.09,Aurangabad,12,High,5.5,3,Low,0.048,11.61,Low
+SHP0266,Mumbai Port Co,Chemicals,183645.43,2466,31,27,4,0.0,5.3,Nagpur,4,Medium,6.5,0,Medium,0.148,5.3,Medium
+SHP0267,Delhi Import Hub,Food & Agri,150808.29,3110,22,21,1,2.64,2.41,Amravati,8,Medium,7.3,9,Low,0.048,5.05,Low
+SHP0268,Guangzhou Exports,Electronics,137666.67,4930,20,14,6,16.04,9.91,Solapur,9,Low,5.7,6,Medium,0.429,25.95,Medium
+SHP0269,Nashik Distributors,Textiles,17042.82,4536,11,10,1,0.0,3.99,Nagpur,9,High,2.8,3,Low,0.1,3.99,Low
+SHP0270,Pune Supply Chain,Chemicals,91158.91,1732,23,23,0,3.72,7.0,Amravati,2,High,6.2,8,Medium,0.0,10.72,Medium
+SHP0271,Shenzhen Traders,Food & Agri,30729.15,3453,24,21,3,10.95,7.36,Thane,9,Medium,6.1,13,Medium,0.143,18.31,Medium
+SHP0272,Chennai Logistics,Electronics,9245.24,2134,32,30,2,4.29,4.06,Pune,10,Low,7.7,5,Low,0.067,8.35,Low
+SHP0273,Kolkata Goods Ltd,Electronics,141575.05,4483,23,18,5,8.41,6.86,Thane,2,Low,9.4,4,Medium,0.278,15.27,Medium
+SHP0274,Chennai Logistics,Machinery,40096.36,1159,23,20,3,3.16,3.47,Kolhapur,11,High,9.8,4,Medium,0.15,6.63,Medium
+SHP0275,Kolkata Goods Ltd,Textiles,174575.96,3142,27,21,6,3.01,8.83,Amravati,11,Medium,1.7,6,Medium,0.286,11.84,Medium
+SHP0276,Pune Supply Chain,Electronics,39802.36,4451,14,10,4,0.0,8.18,Nashik,12,Medium,5.8,4,Medium,0.4,8.18,Medium
+SHP0277,Shenzhen Traders,Chemicals,95285.76,4510,24,16,8,8.88,9.23,Nashik,4,Medium,5.8,0,Medium,0.5,18.11,Medium
+SHP0278,Pune Supply Chain,Electronics,58751.7,974,11,11,0,10.74,3.62,Nanded,7,Low,8.3,5,Medium,0.0,14.36,Medium
+SHP0279,Guangzhou Exports,Textiles,18121.73,4915,23,13,10,16.49,10.3,Mumbai,11,Low,5.0,6,High,0.769,26.79,High
+SHP0280,Shenzhen Traders,Pharmaceuticals,90597.75,4471,31,19,12,11.83,8.4,Nagpur,1,Low,7.8,9,High,0.632,20.23,High
+SHP0281,Chennai Logistics,Textiles,164078.32,4769,18,14,4,6.56,3.28,Solapur,11,Medium,6.2,0,Low,0.286,9.84,Low
+SHP0282,Chennai Logistics,Pharmaceuticals,197210.63,4320,16,11,5,0.0,2.61,Mumbai,5,Low,4.7,1,Low,0.455,2.61,Low
+SHP0283,Nashik Distributors,Pharmaceuticals,182757.64,3549,30,30,0,2.99,2.64,Kolhapur,6,High,5.5,6,Low,0.0,5.63,Low
+SHP0284,Pune Supply Chain,Textiles,86183.3,1272,35,29,6,6.36,3.51,Thane,9,Medium,4.4,8,Low,0.207,9.87,Low
+SHP0285,Guangzhou Exports,Chemicals,172220.54,1232,27,16,11,11.32,11.19,Kolhapur,9,Medium,9.2,7,High,0.688,22.51,High
+SHP0286,Aurangabad Traders,Chemicals,31148.09,2039,25,23,2,9.13,3.7,Pune,11,Medium,2.8,5,Low,0.087,12.83,Low
+SHP0287,Pune Supply Chain,Pharmaceuticals,109448.93,1610,10,9,1,5.05,1.81,Nanded,11,Low,3.4,0,Low,0.111,6.86,Low
+SHP0288,Shenzhen Traders,Textiles,41691.84,4863,18,9,9,9.46,6.02,Thane,4,High,7.0,0,High,1.0,15.48,High
+SHP0289,Pune Supply Chain,Food & Agri,191618.85,175,16,16,0,1.03,7.28,Pune,12,Low,9.4,9,Medium,0.0,8.31,Medium
+SHP0290,Nagpur Freight,Machinery,140647.13,1725,15,14,1,13.76,6.96,Solapur,9,Medium,9.2,3,Medium,0.071,20.72,Medium
+SHP0291,Kolkata Goods Ltd,Chemicals,109061.77,2993,21,21,0,15.87,4.22,Thane,9,Medium,3.4,0,Medium,0.0,20.09,Medium
+SHP0292,Mumbai Port Co,Pharmaceuticals,96550.63,2673,35,30,5,11.32,5.77,Mumbai,7,Low,4.3,7,Medium,0.167,17.09,Medium
+SHP0293,Guangzhou Exports,Machinery,33454.93,2186,39,30,9,17.56,11.52,Kolhapur,10,High,9.4,6,High,0.3,29.08,High
+SHP0294,Delhi Import Hub,Food & Agri,69323.73,3161,16,13,3,5.81,3.49,Amravati,8,High,8.5,3,Medium,0.231,9.3,Medium
+SHP0295,Pune Supply Chain,Textiles,153855.32,4052,15,15,0,4.7,2.02,Thane,8,High,6.8,0,Low,0.0,6.72,Low
+SHP0296,Pune Supply Chain,Pharmaceuticals,32291.91,4527,14,12,2,9.18,5.84,Mumbai,9,Medium,2.7,0,Medium,0.167,15.02,Medium
+SHP0297,Shenzhen Traders,Electronics,189311.68,447,11,9,2,14.82,6.04,Nashik,11,Low,4.7,4,Medium,0.222,20.86,Medium
+SHP0298,Delhi Import Hub,Chemicals,47650.34,3785,11,7,4,3.09,5.21,Nanded,11,Medium,1.5,0,Medium,0.571,8.3,Medium
+SHP0299,Nagpur Freight,Pharmaceuticals,6289.41,4569,9,7,2,7.96,1.81,Aurangabad,9,Medium,1.1,6,Low,0.286,9.77,Low
+SHP0300,Chennai Logistics,Textiles,102932.13,3577,7,7,0,4.66,2.45,Amravati,2,Low,2.0,10,Low,0.0,7.11,Low
+SHP0301,Guangzhou Exports,Machinery,125857.26,2117,21,13,8,13.71,10.24,Pune,7,Medium,3.4,7,High,0.615,23.95,High
+SHP0302,Kolkata Goods Ltd,Electronics,115175.43,1900,27,21,6,9.12,5.6,Mumbai,2,Medium,7.2,2,Medium,0.286,14.72,Medium
+SHP0303,Kolkata Goods Ltd,Electronics,78548.07,3949,20,19,1,14.25,4.51,Nagpur,12,Low,6.7,2,Low,0.053,18.76,Low
+SHP0304,Nagpur Freight,Electronics,130756.91,2763,21,20,1,9.68,4.41,Amravati,2,High,9.8,9,Medium,0.05,14.09,Medium
+SHP0305,Guangzhou Exports,Pharmaceuticals,180748.23,4693,18,13,5,15.84,8.33,Aurangabad,2,Medium,3.4,13,Medium,0.385,24.17,Medium
+SHP0306,Nashik Distributors,Food & Agri,11415.85,2626,28,28,0,2.93,3.27,Nagpur,10,Low,9.7,6,Low,0.0,6.2,Low
+SHP0307,Kolkata Goods Ltd,Machinery,63358.99,4669,14,9,5,8.61,7.09,Amravati,7,Low,6.1,4,Medium,0.556,15.7,Medium
+SHP0308,Kolkata Goods Ltd,Electronics,32290.37,692,38,30,8,15.63,5.89,Mumbai,6,High,7.7,0,High,0.267,21.52,High
+SHP0309,Kolkata Goods Ltd,Machinery,168541.56,2840,19,14,5,16.74,5.39,Kolhapur,10,High,7.9,11,High,0.357,22.13,High
+SHP0310,Shenzhen Traders,Chemicals,58298.77,3740,37,27,10,10.34,9.14,Kolhapur,9,Medium,3.1,11,Medium,0.37,19.48,Medium
+SHP0311,Delhi Import Hub,Food & Agri,119245.65,3163,29,28,1,5.39,3.84,Nashik,5,Low,7.9,0,Low,0.036,9.23,Low
+SHP0312,Mumbai Port Co,Machinery,57254.55,3162,9,9,0,0.33,3.07,Kolhapur,3,High,8.1,1,Medium,0.0,3.4,Medium
+SHP0313,Pune Supply Chain,Textiles,22846.48,2575,12,10,2,0.33,4.66,Pune,5,Medium,4.2,8,Low,0.2,4.99,Low
+SHP0314,Mumbai Port Co,Electronics,89041.01,4612,12,12,0,5.12,5.46,Mumbai,2,High,5.6,0,Medium,0.0,10.58,Medium
+SHP0315,Pune Supply Chain,Chemicals,23147.53,4949,31,24,7,6.26,2.59,Aurangabad,1,Medium,8.8,4,Medium,0.292,8.85,Medium
+SHP0316,Kolkata Goods Ltd,Textiles,146344.55,4633,16,9,7,9.23,8.08,Kolhapur,3,Low,6.1,1,Medium,0.778,17.31,Medium
+SHP0317,Delhi Import Hub,Chemicals,63720.6,4089,18,15,3,1.76,4.78,Aurangabad,7,Low,1.6,1,Low,0.2,6.54,Low
+SHP0318,Chennai Logistics,Pharmaceuticals,157619.99,3008,22,22,0,6.71,4.18,Thane,12,Medium,9.5,7,Low,0.0,10.89,Low
+SHP0319,Nashik Distributors,Pharmaceuticals,94283.02,1159,13,13,0,1.05,4.43,Solapur,7,Medium,1.1,5,Low,0.0,5.48,Low
+SHP0320,Kolkata Goods Ltd,Machinery,90843.47,3577,29,17,12,10.18,7.38,Aurangabad,3,High,9.8,3,High,0.706,17.56,High
+SHP0321,Nashik Distributors,Food & Agri,44166.04,2623,30,29,1,1.54,3.42,Aurangabad,6,Low,9.7,8,Low,0.034,4.96,Low
+SHP0322,Nagpur Freight,Electronics,157485.0,2719,26,25,1,3.01,1.33,Solapur,7,Medium,3.5,7,Low,0.04,4.34,Low
+SHP0323,Nashik Distributors,Food & Agri,120484.27,4519,13,13,0,0.0,2.78,Mumbai,9,Low,7.1,14,Low,0.0,2.78,Low
+SHP0324,Nagpur Freight,Textiles,45881.44,2436,32,29,3,9.52,5.16,Thane,7,High,1.6,4,Medium,0.103,14.68,Medium
+SHP0325,Chennai Logistics,Chemicals,54272.93,1312,17,14,3,2.13,2.53,Pune,7,High,4.8,6,Low,0.214,4.66,Low
+SHP0326,Nashik Distributors,Pharmaceuticals,118537.58,4427,22,22,0,4.98,1.65,Kolhapur,12,High,9.3,1,Medium,0.0,6.63,Medium
+SHP0327,Shenzhen Traders,Textiles,141818.69,4448,24,18,6,9.3,8.06,Pune,2,High,6.7,4,Medium,0.333,17.36,Medium
+SHP0328,Pune Supply Chain,Machinery,131164.97,412,17,12,5,6.42,3.95,Kolhapur,11,High,9.9,8,Medium,0.417,10.37,Medium
+SHP0329,Kolkata Goods Ltd,Pharmaceuticals,7056.82,2169,20,10,10,10.67,7.02,Amravati,9,Low,5.6,0,Medium,1.0,17.69,Medium
+SHP0330,Nashik Distributors,Textiles,91926.82,3254,14,14,0,1.08,0.78,Amravati,10,Medium,8.0,4,Low,0.0,1.86,Low
+SHP0331,Pune Supply Chain,Food & Agri,99140.36,2470,9,7,2,6.59,3.86,Pune,2,Medium,9.3,6,Low,0.286,10.45,Low
+SHP0332,Delhi Import Hub,Electronics,65818.62,3780,21,18,3,0.07,3.12,Thane,6,Low,5.7,4,Low,0.167,3.19,Low
+SHP0333,Nagpur Freight,Electronics,140868.84,2662,30,30,0,8.8,8.06,Pune,12,Low,3.7,9,Medium,0.0,16.86,Medium
+SHP0334,Pune Supply Chain,Textiles,26325.72,1396,28,27,1,9.47,4.3,Amravati,3,High,3.2,3,Medium,0.037,13.77,Medium
+SHP0335,Pune Supply Chain,Textiles,88142.03,3835,24,24,0,4.09,3.22,Nagpur,11,Low,8.2,5,Low,0.0,7.31,Low
+SHP0336,Kolkata Goods Ltd,Food & Agri,10692.49,1666,25,19,6,9.01,7.87,Mumbai,7,Medium,6.3,9,Medium,0.316,16.88,Medium
+SHP0337,Guangzhou Exports,Machinery,59277.24,562,23,13,10,10.55,4.89,Nagpur,9,High,1.9,8,Medium,0.769,15.44,Medium
+SHP0338,Pune Supply Chain,Pharmaceuticals,94222.33,2199,13,13,0,4.33,1.66,Solapur,9,High,8.8,0,Medium,0.0,5.99,Medium
+SHP0339,Kolkata Goods Ltd,Textiles,81546.08,985,33,26,7,11.28,5.85,Nanded,8,Medium,4.2,0,Medium,0.269,17.13,Medium
+SHP0340,Chennai Logistics,Textiles,120082.83,1147,26,26,0,4.18,0.0,Pune,5,Medium,2.1,5,Low,0.0,4.18,Low
+SHP0341,Pune Supply Chain,Chemicals,32564.92,3232,30,29,1,6.74,4.24,Kolhapur,10,Medium,6.4,1,Low,0.034,10.98,Low
+SHP0342,Delhi Import Hub,Textiles,128922.82,1469,28,22,6,5.52,4.95,Nagpur,5,High,2.5,1,Medium,0.273,10.47,Medium
+SHP0343,Pune Supply Chain,Pharmaceuticals,125784.95,2991,21,21,0,2.35,3.65,Kolhapur,4,Low,5.4,11,Low,0.0,6.0,Low
+SHP0344,Aurangabad Traders,Textiles,101519.12,4078,27,27,0,0.16,6.94,Thane,8,Medium,7.4,4,Medium,0.0,7.1,Medium
+SHP0345,Mumbai Port Co,Machinery,11017.84,1856,25,25,0,7.12,1.79,Amravati,4,Medium,1.3,12,Low,0.0,8.91,Low
+SHP0346,Delhi Import Hub,Machinery,115301.84,4107,26,21,5,4.54,9.31,Pune,10,High,5.6,2,Medium,0.238,13.85,Medium
+SHP0347,Aurangabad Traders,Electronics,110698.46,390,23,18,5,5.9,6.6,Kolhapur,4,High,5.0,11,Medium,0.278,12.5,Medium
+SHP0348,Guangzhou Exports,Electronics,175587.92,314,24,16,8,12.74,10.92,Thane,2,Medium,3.4,2,High,0.5,23.66,High
+SHP0349,Guangzhou Exports,Food & Agri,163087.03,4866,27,13,14,15.41,9.27,Nanded,12,High,4.2,5,High,1.077,24.68,High
+SHP0350,Kolkata Goods Ltd,Pharmaceuticals,125149.48,1742,13,12,1,6.09,9.4,Solapur,10,Low,8.2,2,Medium,0.083,15.49,Medium
+SHP0351,Chennai Logistics,Pharmaceuticals,110059.87,2701,26,26,0,4.61,4.37,Aurangabad,10,High,3.6,7,Low,0.0,8.98,Low
+SHP0352,Mumbai Port Co,Food & Agri,192740.54,3421,15,11,4,1.73,0.16,Nagpur,11,Low,9.9,11,Medium,0.364,1.89,Medium
+SHP0353,Delhi Import Hub,Chemicals,33517.47,2688,16,14,2,5.25,7.66,Kolhapur,11,Low,7.9,7,Medium,0.143,12.91,Medium
+SHP0354,Delhi Import Hub,Chemicals,128318.39,3443,29,25,4,12.5,3.71,Pune,11,Medium,5.1,8,Medium,0.16,16.21,Medium
+SHP0355,Aurangabad Traders,Electronics,59254.01,3073,33,30,3,5.81,7.06,Nanded,6,Medium,9.6,7,Medium,0.1,12.87,Medium
+SHP0356,Mumbai Port Co,Chemicals,194569.31,2984,33,30,3,7.22,2.27,Nashik,7,Low,8.2,1,Low,0.1,9.49,Low
+SHP0357,Guangzhou Exports,Chemicals,57364.68,2373,26,22,4,9.1,14.11,Nanded,3,Medium,5.9,0,Medium,0.182,23.21,Medium
+SHP0358,Pune Supply Chain,Electronics,153639.53,426,29,28,1,4.17,4.61,Mumbai,8,Low,6.6,8,Low,0.036,8.78,Low
+SHP0359,Delhi Import Hub,Textiles,94021.04,3554,26,21,5,4.25,4.67,Aurangabad,3,Low,10.0,6,Medium,0.238,8.92,Medium
+SHP0360,Chennai Logistics,Electronics,132644.65,2101,9,9,0,7.82,2.98,Nagpur,11,Low,4.3,7,Low,0.0,10.8,Low
+SHP0361,Kolkata Goods Ltd,Electronics,64574.3,1968,34,27,7,12.52,7.36,Pune,12,Medium,6.9,0,Medium,0.259,19.88,Medium
+SHP0362,Guangzhou Exports,Electronics,20198.05,4913,31,22,9,13.05,8.94,Mumbai,8,Low,5.7,7,Medium,0.409,21.99,Medium
+SHP0363,Pune Supply Chain,Chemicals,197690.21,3509,15,10,5,5.06,4.62,Nashik,2,High,2.2,11,Medium,0.5,9.68,Medium
+SHP0364,Mumbai Port Co,Chemicals,162161.58,895,32,30,2,11.81,4.13,Nagpur,5,Medium,4.3,0,Low,0.067,15.94,Low
+SHP0365,Delhi Import Hub,Food & Agri,198623.33,1220,32,27,5,7.14,7.58,Nanded,1,Low,5.8,7,Medium,0.185,14.72,Medium
+SHP0366,Delhi Import Hub,Food & Agri,73481.61,1795,23,21,2,2.33,4.58,Nanded,7,High,7.7,1,Medium,0.095,6.91,Medium
+SHP0367,Nagpur Freight,Machinery,21904.17,873,15,13,2,8.77,8.34,Kolhapur,10,Low,7.8,6,Medium,0.154,17.11,Medium
+SHP0368,Kolkata Goods Ltd,Pharmaceuticals,159259.95,2079,19,17,2,10.33,9.39,Amravati,4,Medium,6.8,2,Medium,0.118,19.72,Medium
+SHP0369,Nashik Distributors,Pharmaceuticals,123480.65,269,30,30,0,2.04,0.43,Amravati,4,High,8.9,7,Medium,0.0,2.47,Low
+SHP0370,Aurangabad Traders,Chemicals,150829.51,2471,15,13,2,6.26,2.23,Thane,4,High,1.5,3,Low,0.154,8.49,Low
+SHP0371,Mumbai Port Co,Machinery,102418.6,4915,18,14,4,2.88,6.45,Solapur,1,Low,5.8,3,Medium,0.286,9.33,Medium
+SHP0372,Delhi Import Hub,Chemicals,172858.73,4706,22,19,3,8.8,2.16,Nagpur,11,Medium,4.3,0,Low,0.158,10.96,Low
+SHP0373,Mumbai Port Co,Pharmaceuticals,119535.88,162,7,7,0,7.79,1.9,Kolhapur,1,Medium,2.9,15,Low,0.0,9.69,Low
+SHP0374,Chennai Logistics,Pharmaceuticals,143962.67,3453,27,27,0,3.55,5.08,Amravati,2,Medium,7.3,13,Medium,0.0,8.63,Medium
+SHP0375,Nashik Distributors,Pharmaceuticals,59106.21,2588,18,11,7,5.63,4.05,Nagpur,4,Low,5.6,7,Low,0.636,9.68,Low
+SHP0376,Pune Supply Chain,Electronics,119355.25,591,23,19,4,3.35,2.36,Nashik,12,Medium,7.3,4,Medium,0.211,5.71,Medium
+SHP0377,Guangzhou Exports,Food & Agri,185302.41,1000,16,9,7,13.64,11.39,Aurangabad,1,Medium,6.5,8,Medium,0.778,25.03,Medium
+SHP0378,Delhi Import Hub,Pharmaceuticals,7469.67,1174,13,10,3,10.43,2.72,Solapur,8,High,1.1,4,Medium,0.3,13.15,Medium
+SHP0379,Aurangabad Traders,Electronics,55553.16,3096,30,30,0,0.0,3.83,Pune,5,Low,7.7,4,Low,0.0,3.83,Low
+SHP0380,Pune Supply Chain,Chemicals,58036.22,573,26,20,6,6.89,1.95,Pune,10,Medium,7.4,12,Medium,0.3,8.84,Medium
+SHP0381,Nagpur Freight,Electronics,75224.16,4142,30,23,7,8.75,4.55,Aurangabad,3,High,2.5,1,Medium,0.304,13.3,Medium
+SHP0382,Nashik Distributors,Textiles,145941.78,1921,28,28,0,5.27,5.77,Mumbai,1,High,5.6,11,Medium,0.0,11.04,Medium
+SHP0383,Shenzhen Traders,Food & Agri,75975.42,1279,25,22,3,8.64,8.28,Amravati,1,Low,9.4,0,Medium,0.136,16.92,Medium
+SHP0384,Kolkata Goods Ltd,Machinery,67751.39,3459,20,14,6,8.56,6.07,Nanded,2,High,3.9,0,Medium,0.429,14.63,Medium
+SHP0385,Mumbai Port Co,Chemicals,136298.51,481,26,23,3,2.4,0.66,Mumbai,9,Low,3.0,0,Low,0.13,3.06,Low
+SHP0386,Mumbai Port Co,Machinery,173876.28,2595,22,21,1,9.32,6.32,Mumbai,8,Medium,1.8,3,Medium,0.048,15.64,Medium
+SHP0387,Guangzhou Exports,Pharmaceuticals,114942.31,2539,22,16,6,16.41,8.0,Solapur,8,High,6.6,6,High,0.375,24.41,High
+SHP0388,Nagpur Freight,Textiles,147830.35,4527,19,13,6,10.68,4.8,Mumbai,7,Low,2.4,4,Medium,0.462,15.48,Medium
+SHP0389,Aurangabad Traders,Food & Agri,129008.66,128,18,18,0,2.52,3.55,Kolhapur,11,Medium,1.0,6,Low,0.0,6.07,Low
+SHP0390,Chennai Logistics,Food & Agri,45012.9,2001,13,10,3,0.59,4.99,Nagpur,1,Medium,5.4,3,Low,0.3,5.58,Low
+SHP0391,Chennai Logistics,Food & Agri,13560.55,1946,9,9,0,0.76,0.0,Thane,6,High,4.7,8,Low,0.0,0.76,Low
+SHP0392,Mumbai Port Co,Pharmaceuticals,23637.52,1143,29,25,4,3.16,3.13,Nanded,2,High,8.4,7,Medium,0.16,6.29,Medium
+SHP0393,Shenzhen Traders,Food & Agri,134176.57,1120,20,20,0,10.41,9.59,Kolhapur,6,Low,3.6,0,Medium,0.0,20.0,Medium
+SHP0394,Pune Supply Chain,Electronics,93287.78,1963,19,17,2,0.93,4.93,Nanded,3,Low,9.5,4,Low,0.118,5.86,Low
+SHP0395,Delhi Import Hub,Textiles,37053.12,3867,10,10,0,9.49,3.53,Solapur,9,Medium,4.7,1,Low,0.0,13.02,Low
+SHP0396,Nagpur Freight,Food & Agri,95352.59,1032,20,16,4,10.45,2.97,Aurangabad,11,Low,2.4,5,Medium,0.25,13.42,Medium
+SHP0397,Nashik Distributors,Chemicals,46929.05,2735,10,8,2,4.08,2.35,Solapur,4,Low,1.8,3,Low,0.25,6.43,Low
+SHP0398,Aurangabad Traders,Pharmaceuticals,137050.76,2181,8,8,0,5.26,1.86,Thane,7,Low,1.3,0,Low,0.0,7.12,Low
+SHP0399,Aurangabad Traders,Textiles,23471.43,884,18,14,4,7.71,0.0,Nashik,1,Low,2.1,0,Low,0.286,7.71,Low
+SHP0400,Guangzhou Exports,Electronics,77586.75,738,28,19,9,21.17,10.04,Mumbai,2,High,6.3,2,High,0.474,31.21,High
+SHP0401,Guangzhou Exports,Electronics,91469.11,1105,34,27,7,19.12,8.71,Pune,6,Low,9.1,1,High,0.259,27.83,High
+SHP0402,Nagpur Freight,Electronics,37757.9,4751,10,8,2,4.14,5.25,Thane,7,Medium,8.4,11,Medium,0.25,9.39,Medium
+SHP0403,Kolkata Goods Ltd,Chemicals,88199.48,2949,34,28,6,8.24,6.42,Aurangabad,5,Low,9.2,0,Medium,0.214,14.66,Medium
+SHP0404,Delhi Import Hub,Chemicals,124750.78,2063,13,8,5,5.77,4.64,Amravati,7,High,3.7,17,Medium,0.625,10.41,Medium
+SHP0405,Shenzhen Traders,Food & Agri,59556.32,1174,14,9,5,9.74,7.15,Nashik,9,Medium,2.8,9,Medium,0.556,16.89,Medium
+SHP0406,Aurangabad Traders,Pharmaceuticals,197933.71,2991,10,7,3,0.69,5.84,Solapur,8,Medium,5.9,2,Low,0.429,6.53,Low
+SHP0407,Aurangabad Traders,Machinery,80734.35,1523,25,17,8,8.24,3.11,Mumbai,4,Low,3.9,10,Medium,0.471,11.35,Medium
+SHP0408,Shenzhen Traders,Food & Agri,108239.3,4834,27,22,5,14.56,8.97,Nashik,2,Low,9.8,1,Medium,0.227,23.53,Medium
+SHP0409,Guangzhou Exports,Textiles,109069.47,508,21,15,6,18.09,9.33,Solapur,7,Low,6.2,3,Medium,0.4,27.42,Medium
+SHP0410,Delhi Import Hub,Pharmaceuticals,120541.3,2989,14,14,0,7.27,9.13,Solapur,12,High,1.3,0,Medium,0.0,16.4,Medium
+SHP0411,Nashik Distributors,Electronics,114806.23,1592,12,11,1,6.24,1.84,Thane,3,Medium,5.9,6,Low,0.091,8.08,Low
+SHP0412,Mumbai Port Co,Pharmaceuticals,50361.55,1842,8,8,0,5.28,2.63,Solapur,1,Low,5.7,8,Low,0.0,7.91,Low
+SHP0413,Guangzhou Exports,Food & Agri,71448.01,1503,22,11,11,22.77,11.16,Nanded,3,Medium,1.5,6,High,1.0,33.93,High
+SHP0414,Delhi Import Hub,Pharmaceuticals,170063.77,3039,13,10,3,4.94,5.68,Kolhapur,11,Low,4.4,3,Low,0.3,10.62,Low
+SHP0415,Mumbai Port Co,Food & Agri,63844.2,1167,19,17,2,7.95,0.99,Thane,7,Low,7.6,9,Low,0.118,8.94,Low
+SHP0416,Pune Supply Chain,Textiles,142900.67,4653,17,12,5,4.65,0.0,Solapur,10,High,9.0,2,Medium,0.417,4.65,Medium
+SHP0417,Nashik Distributors,Chemicals,78784.9,2462,16,12,4,1.93,0.0,Nanded,1,Low,2.6,2,Low,0.333,1.93,Low
+SHP0418,Nashik Distributors,Chemicals,40505.94,2656,11,8,3,3.64,1.52,Pune,10,High,3.0,3,Low,0.375,5.16,Low
+SHP0419,Delhi Import Hub,Food & Agri,150341.95,1999,18,17,1,3.23,8.23,Pune,3,Medium,9.8,3,Medium,0.059,11.46,Medium
+SHP0420,Pune Supply Chain,Electronics,7222.15,1767,26,21,5,9.56,6.0,Aurangabad,6,Low,7.2,3,Medium,0.238,15.56,Medium
+SHP0421,Shenzhen Traders,Machinery,80257.73,3487,14,8,6,11.93,6.19,Kolhapur,8,Low,9.0,6,Medium,0.75,18.12,Medium
+SHP0422,Aurangabad Traders,Textiles,24778.57,3977,19,19,0,8.56,3.07,Nashik,11,High,6.9,5,Medium,0.0,11.63,Medium
+SHP0423,Nagpur Freight,Electronics,160842.94,323,13,9,4,6.22,6.17,Pune,5,Medium,1.2,3,Medium,0.444,12.39,Medium
+SHP0424,Pune Supply Chain,Pharmaceuticals,178146.6,1368,16,12,4,0.96,4.25,Solapur,2,High,1.7,12,Medium,0.333,5.21,Medium
+SHP0425,Nashik Distributors,Electronics,142378.41,3583,22,22,0,0.0,3.03,Nagpur,7,High,2.5,5,Low,0.0,3.03,Low
+SHP0426,Mumbai Port Co,Machinery,45082.34,1606,20,17,3,5.47,4.27,Amravati,12,Medium,7.3,9,Low,0.176,9.74,Low
+SHP0427,Chennai Logistics,Electronics,51321.92,456,18,16,2,2.28,3.35,Nagpur,8,Medium,6.1,12,Low,0.125,5.63,Low
+SHP0428,Pune Supply Chain,Electronics,88383.16,2462,8,7,1,2.08,6.21,Nashik,8,High,6.6,4,Medium,0.143,8.29,Medium
+SHP0429,Shenzhen Traders,Chemicals,38312.28,2440,13,13,0,14.54,6.93,Aurangabad,2,Low,5.3,4,Medium,0.0,21.47,Medium
+SHP0430,Nagpur Freight,Machinery,179501.11,2220,26,22,4,7.57,6.42,Nagpur,7,Low,6.8,3,Medium,0.182,13.99,Medium
+SHP0431,Kolkata Goods Ltd,Machinery,41383.67,415,25,18,7,8.22,8.48,Nashik,5,Medium,5.0,7,Medium,0.389,16.7,Medium
+SHP0432,Nashik Distributors,Pharmaceuticals,34470.48,842,8,8,0,5.26,0.93,Kolhapur,9,Low,7.0,8,Low,0.0,6.19,Low
+SHP0433,Guangzhou Exports,Pharmaceuticals,16891.83,3221,33,24,9,20.51,9.55,Thane,9,High,4.8,3,High,0.375,30.06,High
+SHP0434,Guangzhou Exports,Pharmaceuticals,63276.16,3284,29,22,7,14.09,11.6,Amravati,10,High,1.3,0,High,0.318,25.69,High
+SHP0435,Nashik Distributors,Textiles,28454.97,3728,11,11,0,0.0,3.9,Nashik,3,Low,9.5,11,Low,0.0,3.9,Low
+SHP0436,Delhi Import Hub,Pharmaceuticals,87558.11,3616,10,8,2,5.49,5.14,Nagpur,11,Low,10.0,9,Medium,0.25,10.63,Medium
+SHP0437,Chennai Logistics,Machinery,182606.87,598,17,17,0,3.72,3.95,Amravati,7,Low,4.5,7,Low,0.0,7.67,Low
+SHP0438,Chennai Logistics,Electronics,94340.65,151,24,23,1,6.0,0.0,Kolhapur,9,High,6.6,7,Low,0.043,6.0,Low
+SHP0439,Kolkata Goods Ltd,Pharmaceuticals,33898.95,4866,15,11,4,3.51,8.02,Pune,2,High,7.8,10,Medium,0.364,11.53,Medium
+SHP0440,Mumbai Port Co,Pharmaceuticals,174157.68,2866,17,16,1,6.86,6.22,Thane,11,Medium,3.4,10,Low,0.062,13.08,Low
+SHP0441,Nashik Distributors,Electronics,12305.81,2306,27,22,5,4.23,2.15,Kolhapur,10,Medium,2.3,0,Low,0.227,6.38,Low
+SHP0442,Kolkata Goods Ltd,Electronics,139650.18,453,22,17,5,6.47,11.34,Solapur,5,High,5.3,4,Medium,0.294,17.81,Medium
+SHP0443,Pune Supply Chain,Machinery,65635.11,4077,18,16,2,6.65,4.09,Nagpur,4,High,7.2,11,Medium,0.125,10.74,Medium
+SHP0444,Nagpur Freight,Textiles,57536.9,3464,19,17,2,7.58,3.52,Thane,4,High,6.8,0,Low,0.118,11.1,Low
+SHP0445,Kolkata Goods Ltd,Electronics,99469.76,4281,34,30,4,8.89,6.14,Nagpur,9,Medium,8.4,2,Medium,0.133,15.03,Medium
+SHP0446,Chennai Logistics,Textiles,103825.08,1161,29,29,0,2.75,0.0,Nagpur,1,High,8.9,8,Medium,0.0,2.75,Low
+SHP0447,Guangzhou Exports,Machinery,53650.6,3789,16,8,8,10.63,9.38,Nashik,12,Low,9.3,1,High,1.0,20.01,High
+SHP0448,Pune Supply Chain,Pharmaceuticals,103499.64,1064,23,21,2,9.02,0.25,Thane,6,High,1.3,5,Medium,0.095,9.27,Medium
+SHP0449,Nagpur Freight,Machinery,192301.47,3937,15,12,3,9.01,5.43,Nagpur,6,High,6.0,1,Medium,0.25,14.44,Medium
+SHP0450,Mumbai Port Co,Food & Agri,10352.85,456,17,16,1,1.61,5.15,Nashik,4,Low,8.7,5,Medium,0.062,6.76,Medium
+SHP0451,Guangzhou Exports,Chemicals,45312.54,3404,41,28,13,14.82,8.58,Mumbai,11,High,1.2,0,High,0.464,23.4,High
+SHP0452,Delhi Import Hub,Chemicals,38774.13,119,27,27,0,1.25,5.53,Aurangabad,5,Low,3.3,7,Low,0.0,6.78,Low
+SHP0453,Kolkata Goods Ltd,Chemicals,94504.61,1837,19,18,1,11.69,6.03,Nanded,9,Medium,3.7,5,Medium,0.056,17.72,Medium
+SHP0454,Nashik Distributors,Machinery,6432.78,3115,15,10,5,4.69,1.46,Aurangabad,10,High,6.8,1,Medium,0.5,6.15,Medium
+SHP0455,Mumbai Port Co,Food & Agri,17448.23,2314,22,22,0,1.84,2.58,Aurangabad,5,High,3.9,1,Low,0.0,4.42,Low
+SHP0456,Chennai Logistics,Food & Agri,34236.21,2018,13,13,0,3.23,1.55,Kolhapur,10,Low,8.2,2,Low,0.0,4.78,Low
+SHP0457,Pune Supply Chain,Chemicals,32286.25,258,30,28,2,6.33,1.82,Aurangabad,5,High,5.5,10,Low,0.071,8.15,Low
+SHP0458,Kolkata Goods Ltd,Food & Agri,148662.76,4826,24,19,5,9.06,8.42,Solapur,4,High,10.0,5,High,0.263,17.48,High
+SHP0459,Guangzhou Exports,Food & Agri,109253.84,3947,38,28,10,15.86,8.78,Nagpur,5,High,4.2,6,High,0.357,24.64,High
+SHP0460,Aurangabad Traders,Textiles,62287.89,3906,12,12,0,5.33,3.93,Amravati,12,Low,7.7,4,Low,0.0,9.26,Low
+SHP0461,Pune Supply Chain,Machinery,22413.47,2960,28,27,1,0.0,2.9,Kolhapur,5,Low,7.7,5,Low,0.037,2.9,Low
+SHP0462,Pune Supply Chain,Pharmaceuticals,119186.29,3849,17,15,2,1.92,6.53,Nanded,11,Low,5.2,1,Low,0.133,8.45,Low
+SHP0463,Nashik Distributors,Pharmaceuticals,97082.84,1643,12,9,3,3.28,0.71,Kolhapur,11,High,2.1,12,Low,0.333,3.99,Low
+SHP0464,Chennai Logistics,Pharmaceuticals,15542.08,1285,20,20,0,5.76,4.0,Kolhapur,6,Low,9.9,2,Low,0.0,9.76,Low
+SHP0465,Nagpur Freight,Machinery,66694.77,1527,19,11,8,6.25,5.58,Nagpur,11,Low,5.4,6,Medium,0.727,11.83,Medium
+SHP0466,Shenzhen Traders,Electronics,93150.38,1765,11,7,4,14.43,9.59,Thane,3,Low,6.2,0,Medium,0.571,24.02,Medium
+SHP0467,Delhi Import Hub,Electronics,89573.73,3567,32,26,6,1.01,7.07,Kolhapur,8,Medium,4.9,9,Medium,0.231,8.08,Medium
+SHP0468,Shenzhen Traders,Electronics,43885.78,3106,25,24,1,10.77,5.79,Nashik,9,Low,9.0,4,Medium,0.042,16.56,Medium
+SHP0469,Shenzhen Traders,Electronics,148052.63,1903,31,27,4,14.34,10.62,Nagpur,5,High,8.9,10,High,0.148,24.96,High
+SHP0470,Kolkata Goods Ltd,Chemicals,119790.78,1418,27,23,4,8.37,3.63,Aurangabad,5,Low,8.4,1,Medium,0.174,12.0,Medium
+SHP0471,Aurangabad Traders,Machinery,107202.94,3602,31,26,5,9.85,1.53,Thane,6,High,10.0,2,Medium,0.192,11.38,Medium
+SHP0472,Guangzhou Exports,Textiles,189876.45,3354,19,12,7,15.84,8.38,Nagpur,12,Low,3.1,6,Medium,0.583,24.22,Medium
+SHP0473,Shenzhen Traders,Food & Agri,103403.54,1058,28,25,3,11.96,9.09,Kolhapur,1,Medium,7.4,5,Medium,0.12,21.05,Medium
+SHP0474,Chennai Logistics,Electronics,126511.28,4915,24,24,0,2.67,1.82,Mumbai,11,Low,7.0,3,Low,0.0,4.49,Low
+SHP0475,Mumbai Port Co,Textiles,91641.29,1062,21,20,1,8.8,4.12,Nagpur,12,High,3.3,3,Medium,0.05,12.92,Medium
+SHP0476,Shenzhen Traders,Food & Agri,87069.93,877,23,16,7,11.0,10.35,Nanded,10,High,5.7,6,High,0.438,21.35,High
+SHP0477,Delhi Import Hub,Electronics,166977.28,909,22,20,2,7.34,1.86,Aurangabad,2,High,7.5,0,Medium,0.1,9.2,Medium
+SHP0478,Mumbai Port Co,Food & Agri,43736.1,1686,22,22,0,4.43,6.47,Solapur,4,Medium,8.5,13,Medium,0.0,10.9,Medium
+SHP0479,Kolkata Goods Ltd,Machinery,36272.85,4540,23,16,7,10.5,3.4,Thane,12,Medium,9.2,2,Medium,0.438,13.9,Medium
+SHP0480,Guangzhou Exports,Textiles,7486.13,779,12,7,5,13.14,9.66,Thane,11,Low,8.5,3,Medium,0.714,22.8,Medium
+SHP0481,Mumbai Port Co,Machinery,19634.4,879,23,23,0,6.24,0.85,Aurangabad,8,Medium,6.8,5,Low,0.0,7.09,Low
+SHP0482,Nagpur Freight,Chemicals,24462.74,1481,18,8,10,4.24,0.0,Solapur,6,Low,8.7,3,Medium,1.25,4.24,Medium
+SHP0483,Mumbai Port Co,Machinery,170992.95,425,15,10,5,9.88,0.54,Nagpur,11,Low,8.7,6,Medium,0.5,10.42,Medium
+SHP0484,Pune Supply Chain,Electronics,191242.39,2247,21,21,0,4.68,9.29,Nagpur,6,High,1.8,0,Medium,0.0,13.97,Medium
+SHP0485,Kolkata Goods Ltd,Food & Agri,192650.44,2276,25,19,6,10.4,9.17,Kolhapur,8,Medium,7.2,5,Medium,0.316,19.57,Medium
+SHP0486,Delhi Import Hub,Pharmaceuticals,30839.76,530,13,10,3,4.83,5.54,Thane,10,Low,1.9,3,Low,0.3,10.37,Low
+SHP0487,Nagpur Freight,Chemicals,124208.02,2987,17,12,5,5.89,5.75,Nagpur,11,High,1.3,4,Medium,0.417,11.64,Medium
+SHP0488,Nagpur Freight,Electronics,178080.82,3660,17,10,7,6.85,1.45,Solapur,11,Low,1.6,10,Low,0.7,8.3,Low
+SHP0489,Aurangabad Traders,Pharmaceuticals,117446.56,4678,30,30,0,3.04,2.81,Solapur,11,Low,9.8,10,Low,0.0,5.85,Low
+SHP0490,Aurangabad Traders,Machinery,141613.14,830,29,29,0,14.41,6.11,Thane,4,Medium,7.0,5,Medium,0.0,20.52,Medium
+SHP0491,Kolkata Goods Ltd,Pharmaceuticals,168611.44,4623,16,11,5,9.86,8.04,Nagpur,11,High,1.5,7,Medium,0.455,17.9,Medium
+SHP0492,Nagpur Freight,Electronics,174536.05,663,27,22,5,7.27,4.61,Aurangabad,6,Medium,3.9,4,Low,0.227,11.88,Low
+SHP0493,Aurangabad Traders,Chemicals,112346.64,3151,16,14,2,8.4,5.19,Thane,2,Medium,8.4,0,Medium,0.143,13.59,Medium
+SHP0494,Nashik Distributors,Electronics,22163.87,4133,23,21,2,2.58,1.96,Mumbai,8,Medium,3.8,3,Low,0.095,4.54,Low
+SHP0495,Kolkata Goods Ltd,Food & Agri,11987.23,4548,29,20,9,11.84,5.45,Nanded,10,Low,8.4,6,High,0.45,17.29,High
+SHP0496,Chennai Logistics,Chemicals,114654.85,3787,23,23,0,0.0,0.75,Nashik,1,Medium,4.3,8,Low,0.0,0.75,Low
+SHP0497,Pune Supply Chain,Electronics,154646.2,4964,28,24,4,6.54,5.45,Thane,6,Medium,7.4,7,Medium,0.167,11.99,Medium
+SHP0498,Mumbai Port Co,Pharmaceuticals,48240.69,2846,28,28,0,5.3,4.6,Amravati,5,Medium,8.5,8,Low,0.0,9.9,Low
+SHP0499,Pune Supply Chain,Electronics,25732.83,1394,34,29,5,7.12,4.7,Kolhapur,12,Medium,2.3,9,Low,0.172,11.82,Low
+SHP0500,Chennai Logistics,Electronics,43204.69,1039,26,26,0,0.35,1.67,Solapur,4,Medium,2.9,2,Low,0.0,2.02,Low
