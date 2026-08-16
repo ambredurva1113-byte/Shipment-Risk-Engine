@@ -1,4 +1,6 @@
-#Shipment Trust & Risk Intelligence System
+---
+
+# Shipment Trust & Risk Intelligence System
 **Supplier Trust Scoring & Shipment Risk Prediction for Import-Export Businesses**
 
 Built for businesses that need to know — which supplier to trust and which shipment will go wrong before it does.
@@ -13,9 +15,9 @@ This system catches them early —
 
 ---
 
-##Description  
+## Description
 
-| Description |
+| Module | Description |
 |---|---|
 | Trust Score Engine | Scores every supplier 0–100 based on delay, damage & return history |
 | Risk Predictor | Classifies shipments as Low / Medium / High risk |
