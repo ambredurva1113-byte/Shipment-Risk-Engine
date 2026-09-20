@@ -1,117 +1,111 @@
-import pandas as pd
+"""
+generate_data.py  --  DESIGN THINKING STAGE 1: EMPATHIZE
+---------------------------------------------------------
+Persona: an importer in Mumbai who lost money on late / damaged / returned
+shipments and only found out AFTER the loss.
+
+Their pain points drive what we simulate:
+  * some suppliers are chronically late           -> delay
+  * fragile goods arrive damaged                  -> damage
+  * bad orders get sent back                      -> return
+  * monsoon months + long routes make it worse    -> season / distance
+
+Output: shipment_data.csv (500 shipments, 10 suppliers, 10 cities, 6 products)
+NOTE: data is synthetic because real supplier data is confidential.
+"""
 import numpy as np
-import random
+import pandas as pd
 
-random.seed(42)
-np.random.seed(42)
+rng = np.random.default_rng(42)
+N = 500
 
-suppliers = [
-    "Shenzhen Traders", "Mumbai Port Co", "Delhi Import Hub",
-    "Guangzhou Exports", "Chennai Logistics", "Pune Supply Chain",
-    "Kolkata Goods Ltd", "Nagpur Freight", "Aurangabad Traders",
-    "Nashik Distributors"
-]
+# ---- 10 suppliers, each with its own reliability profile --------------------
+suppliers = pd.DataFrame({
+    "supplier_id": [f"S{i:02d}" for i in range(1, 11)],
+    "supplier_name": ["Shenzhen ElectroTech", "Guangzhou Textiles", "Ningbo Machinery",
+                      "Dubai Chem Traders", "Shanghai FoodCorp", "Foshan Furniture",
+                      "Yiwu Bulk Goods", "Tianjin Steelworks", "Hanoi Garments", "Istanbul Trade Co"],
+    #                 P(delay) P(damage) P(return)
+    "p_delay":  [0.10, 0.18, 0.12, 0.45, 0.25, 0.30, 0.55, 0.15, 0.22, 0.38],
+    "p_damage": [0.05, 0.08, 0.06, 0.20, 0.15, 0.25, 0.30, 0.07, 0.10, 0.18],
+    "p_return": [0.02, 0.05, 0.03, 0.15, 0.08, 0.12, 0.25, 0.04, 0.07, 0.12],
+})
 
-categories = ["Electronics", "Textiles", "Machinery", "Chemicals", "Pharmaceuticals", "Food & Agri"]
-
-maharashtra_cities = [
-    "Mumbai", "Pune", "Nagpur", "Nashik", "Aurangabad",
-    "Solapur", "Kolhapur", "Thane", "Amravati", "Nanded"
-]
-
-weather_options = ["Low", "Medium", "High"]
-months = list(range(1, 13))
-
-# Supplier profiles — some are naturally bad, some are good
-# This makes the data realistic
-supplier_profiles = {
-    "Shenzhen Traders":    {"delay_bias": 5,  "damage_bias": 12, "return_bias": 8},
-    "Mumbai Port Co":      {"delay_bias": 2,  "damage_bias": 4,  "return_bias": 3},
-    "Delhi Import Hub":    {"delay_bias": 3,  "damage_bias": 6,  "return_bias": 5},
-    "Guangzhou Exports":   {"delay_bias": 8,  "damage_bias": 15, "return_bias": 10},
-    "Chennai Logistics":   {"delay_bias": 1,  "damage_bias": 3,  "return_bias": 2},
-    "Pune Supply Chain":   {"delay_bias": 2,  "damage_bias": 5,  "return_bias": 4},
-    "Kolkata Goods Ltd":   {"delay_bias": 6,  "damage_bias": 9,  "return_bias": 7},
-    "Nagpur Freight":      {"delay_bias": 4,  "damage_bias": 7,  "return_bias": 5},
-    "Aurangabad Traders":  {"delay_bias": 3,  "damage_bias": 5,  "return_bias": 4},
-    "Nashik Distributors": {"delay_bias": 1,  "damage_bias": 2,  "return_bias": 2},
+# ---- 10 Maharashtra cities: (distance from JNPT port km, route difficulty) ---
+cities = {
+    "Mumbai": (30, 1.00), "Thane": (45, 1.00), "Pune": (150, 1.05),
+    "Nashik": (190, 1.10), "Aurangabad": (330, 1.15), "Kolhapur": (380, 1.20),
+    "Solapur": (410, 1.20), "Nagpur": (850, 1.35), "Amravati": (750, 1.30), "Nanded": (620, 1.30),
 }
 
-records = []
+# ---- 6 product categories: (fragility, avg order value INR) ------------------
+products = {
+    "Electronics": (1.5, 450000), "Textiles": (0.7, 200000), "Machinery Parts": (0.9, 600000),
+    "Chemicals": (1.2, 300000), "Food Items": (1.4, 150000), "Furniture": (1.3, 250000),
+}
 
-for i in range(1, 501):
-    supplier = random.choice(suppliers)
-    profile = supplier_profiles[supplier]
+modes = {"Road": 1.00, "Rail": 0.90, "Sea+Road": 1.15}
 
-    expected_days = random.randint(7, 30)
-    delay_days = max(0, int(np.random.normal(profile["delay_bias"], 3)))
-    shipping_days = expected_days + delay_days
+rows = []
+ceiling = []
+from scipy.stats import gamma as _gamma
+dates = pd.to_datetime("2025-01-01") + pd.to_timedelta(np.sort(rng.integers(0, 365, N)), unit="D")
+for i in range(N):
+    s = suppliers.iloc[rng.integers(0, 10)]
+    city = rng.choice(list(cities))
+    prod = rng.choice(list(products))
+    mode = rng.choice(list(modes), p=[0.55, 0.25, 0.20])
+    dist, route_diff = cities[city]
+    fragility, avg_val = products[prod]
+    month = dates[i].month
+    monsoon = int(month in (6, 7, 8, 9))
+    value = int(max(30000, rng.normal(avg_val, avg_val * 0.35)))
+    weight = int(max(50, rng.normal(1500, 700)))
+    planned_days = int(7 + dist / 60 + (5 if mode == "Sea+Road" else 0))
 
-    damage_rate = round(max(0, np.random.normal(profile["damage_bias"], 3)), 2)
-    return_rate = round(max(0, np.random.normal(profile["return_bias"], 2)), 2)
+    # Outcome probabilities = supplier baseline x context multipliers
+    p_delay = min(0.95, s.p_delay * route_diff * modes[mode] * (1.35 if monsoon else 1.0))
+    p_damage = min(0.90, s.p_damage * fragility * (1.25 if monsoon else 1.0) * (1 + dist / 2500))
+    p_return = min(0.80, s.p_return * (1 + 0.5 * (value > 500000)) * (1.15 if monsoon else 1.0))
 
-    import_cost = round(random.uniform(5000, 200000), 2)
-    quantity = random.randint(50, 5000)
+    # --- theoretical best-case (Bayes) accuracy: what a model that knew the TRUE probabilities could reach
+    _scale = 0.9 + 2.5 * s.p_delay + 1.2 * monsoon + dist / 600
+    p_big = 1 - _gamma.cdf(5.5, 2.0, scale=_scale)                 # P(delay > 5 days | delayed)
+    p_not_high = (1 - p_delay) * (1 - p_return) + p_delay * (1 - p_damage) * (1 - p_return) * (1 - p_big)
+    p_low = (1 - p_delay) * (1 - p_damage) * (1 - p_return)
+    ceiling.append(max(p_low, 1 - p_not_high, 1 - p_low - (1 - p_not_high)))
+    delayed = rng.random() < p_delay
+    damaged = rng.random() < p_damage
+    returned = rng.random() < p_return
+    # delay length depends on supplier slowness, monsoon and distance (not pure luck)
+    scale = 0.9 + 2.5 * s.p_delay + 1.2 * monsoon + dist / 600
+    delay_days = int(np.clip(round(rng.gamma(2.0, scale)), 1, 15)) if delayed else 0
 
-    weather_risk = random.choice(weather_options)
-    port_congestion = round(random.uniform(1, 10), 1)
-    payment_delay = max(0, int(np.random.normal(5, 4)))
-    month = random.choice(months)
-    region = random.choice(maharashtra_cities)
-    category = random.choice(categories)
+    rows.append(dict(
+        shipment_id=f"SH{i+1:04d}", ship_date=dates[i].date(), supplier_id=s.supplier_id,
+        supplier_name=s.supplier_name, city=city, product=prod, transport_mode=mode,
+        order_value=value, weight_kg=weight, distance_km=dist, planned_days=planned_days,
+        month=month, monsoon=monsoon, delayed=int(delayed), delay_days=delay_days,
+        damaged=int(damaged), returned=int(returned),
+    ))
 
-    # Risk label — using business rules, not random
-    risk_score = 0
+df = pd.DataFrame(rows)
 
-    if delay_days > 7:
-        risk_score += 2
-    elif delay_days > 3:
-        risk_score += 1
+# ---- TARGET: shipment risk outcome (what the importer actually cares about) --
+# High   = returned, OR damaged+delayed, OR delayed more than 5 days
+# Medium = any delay or any damage
+# Low    = clean shipment
+def label(r):
+    if r.returned or (r.damaged and r.delayed) or r.delay_days > 5:
+        return "High"
+    if r.delayed or r.damaged:
+        return "Medium"
+    return "Low"
 
-    if damage_rate > 15:
-        risk_score += 2
-    elif damage_rate > 8:
-        risk_score += 1
-
-    if return_rate > 10:
-        risk_score += 2
-    elif return_rate > 5:
-        risk_score += 1
-
-    if weather_risk == "High":
-        risk_score += 1
-
-    if port_congestion > 7:
-        risk_score += 1
-
-    if risk_score >= 5:
-        risk_label = "High"
-    elif risk_score >= 2:
-        risk_label = "Medium"
-    else:
-        risk_label = "Low"
-
-    records.append({
-        "Shipment_ID": f"SHP{str(i).zfill(4)}",
-        "Supplier_Name": supplier,
-        "Product_Category": category,
-        "Import_Cost": import_cost,
-        "Quantity": quantity,
-        "Shipping_Days": shipping_days,
-        "Expected_Days": expected_days,
-        "Delay_Days": delay_days,
-        "Damage_Rate": damage_rate,
-        "Return_Rate": return_rate,
-        "Region": region,
-        "Month": month,
-        "Weather_Risk": weather_risk,
-        "Port_Congestion_Score": port_congestion,
-        "Payment_Delay": payment_delay,
-        "Risk_Label": risk_label
-    })
-
-df = pd.DataFrame(records)
+df["risk_level"] = df.apply(label, axis=1)
 df.to_csv("shipment_data.csv", index=False)
-print(f"Dataset created: {len(df)} records")
-print(df["Risk_Label"].value_counts())
-print(df.head(3))
+print(f"Saved shipment_data.csv  ({len(df)} rows)")
+print(df["risk_level"].value_counts().to_string())
+
+print(f"\nBayes-optimal accuracy ceiling for this data: {np.mean(ceiling):.1%}")
+open("bayes_ceiling.txt", "w").write(f"{np.mean(ceiling):.4f}")
